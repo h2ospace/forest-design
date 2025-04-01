@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="/apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
+		<link href="https://www.localknowledge.jp/wp-includes/css/dist/block-library/style.min.css" rel="stylesheet" /><!--標準ブロックエディタのcss　wordpress投入時は削除-->
+		<link href="/asset/css/common.min.css" rel="stylesheet" />
+		<title>森林循環経済 | FOREST CIRCULARITY</title>
+		
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="js-header">
+			<div class="header--wrap">
+				<div class="header--left">
+					<form action="search.html">
+						<input type="text" name="s" placeholder="サイト内検索" />
+						<button type="submit"><img src="/asset/images/icon-search.svg" alt="" width="20" height="20" /></button>
+					</form>
+				</div>
+				<div class="header--logo">
+					<a href="/"><img src="/asset/images/logo.svg" alt="森林循環経済 FOREST CIRCULARITY" width="373" height="33" /></a>
+				</div>
+				<div class="header--right">
+					<ul>
+						<li>
+							執筆者一覧<span>Contributors</span>
+							<a href="/page-contributors.html"></a>
+						</li>
+						<li>
+							メルマガ登録<span>Newsletter</span>
+							<a href="/page-newsletter.html"></a>
+						</li>
+						<li class="icon-fb">
+							<a target="_blank" href="https://www.facebook.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m22.27 20.08.74-4.86h-4.66v-3.15c0-1.33.65-2.63 2.74-2.63h2.12v-4.14s-1.92-.33-3.76-.33c-3.84 0-6.35 2.33-6.35 6.54v3.7h-4.27v4.86h4.27v11.74c.86.13 1.73.2 2.63.2s1.77-.07 2.63-.2v-11.74h3.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li class="icon-x">
+							<a target="_blank" href="https://x.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m17.64 14.68 6.43-7.32h-1.52l-5.58 6.35-4.46-6.35h-5.14l6.74 9.61-6.74 7.67h1.52l5.89-6.71 4.71 6.71h5.14m-15.19-16.15h2.34l10.77 15.08h-2.34" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li class="icon-rss">
+							<a target="_blank" href="/feed/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<g fill="#fff">
+										<path d="m10.28 24.11c-1.2 0-2.17-.97-2.17-2.17s.97-2.16 2.17-2.16 2.17.97 2.17 2.16-.97 2.17-2.17 2.17z" />
+										<path d="m15.46 24.11c-.04-4.03-3.31-7.3-7.35-7.34v-3.21c5.81.04 10.52 4.74 10.56 10.55z" />
+										<path d="m20.9 24.11c-.02-7.06-5.74-12.76-12.79-12.79v-3.21c8.83.03 15.98 7.18 16 16z" />
+									</g>
+								</svg>
+							</a>
+						</li>
+						<li class="icon-contact">
+							<a target="_blank" href="/contact/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m25.5 11.13c0 .56-.17 1.09-.52 1.6s-.78.94-1.29 1.3c-2.66 1.84-4.31 2.99-4.96 3.45-.07.05-.22.16-.45.32-.23.17-.42.3-.57.4s-.34.22-.55.34c-.22.13-.42.22-.61.29-.19.06-.37.1-.53.1h-.02c-.16 0-.34-.03-.53-.1-.19-.06-.39-.16-.61-.29s-.4-.24-.55-.34-.34-.24-.57-.4c-.23-.17-.38-.27-.45-.32-.64-.45-1.57-1.1-2.78-1.94s-1.93-1.34-2.17-1.51c-.44-.3-.85-.71-1.24-1.22s-.58-1-.58-1.45c0-.55.15-1.01.44-1.38s.71-.55 1.26-.55h15.61c.46 0 .86.17 1.19.5.34.33.5.73.5 1.2zm0 3.12v8.42c0 .47-.17.87-.5 1.2s-.73.5-1.2.5h-15.61c-.47 0-.87-.17-1.2-.5s-.5-.73-.5-1.2v-8.42c.31.35.67.65 1.07.92 2.56 1.74 4.32 2.96 5.27 3.66.4.3.73.53.98.69.25.17.58.34 1 .51s.81.26 1.17.26h.02c.36 0 .75-.09 1.17-.26s.75-.34 1-.51.58-.4.98-.69c1.2-.87 2.96-2.09 5.28-3.66.4-.28.76-.58 1.06-.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header--nav">
+				<ul>
+					<li>
+						再生可能エネルギー<span>Green Energy</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						木造都市／第2の森林<span>Secondary Forest</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						林業の革新<span>Innovation</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						地域創生と森林<span>Local Revitalization</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						森林文化の熟成<span>Culture</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						接続する社会的共通資本<span>Circulation &amp; Connectivity</span>
+						<a href="/category-tag.html"></a>
+					</li>
+				</ul>
+			</div>
+			<!-- SP Menu -->
+			<div class="open--btn">
+				<img class="on" src="/asset/images/icon-search.svg" alt="" width="20" height="20" />
+				<img class="off" src="/asset/images/icon-close.svg" alt="" width="20" height="20" />
+			</div>
+			<div id="search--wrap" class="panelactive">
+				<form role="search" id="searchform" action="/search.html">
+					<input type="text" name="s" id="search--text" placeholder="サイト内検索" />
+					<button type="submit"><img src="/asset/images/icon-search.svg" alt="" width="20" height="20" /></button>
+				</form>
+			</div>
+			<div class="hamburger" id="js_hamburger">
+				<span class="hamburger-linetop"></span>
+				<span class="hamburger-linecenter"></span>
+				<span class="hamburger-linebottom"></span>
+			</div>
+			<!-- More Menu -->
+			<div class="more--menu">
+				<div class="more--wrap-base">
+					<div class="more--wrap">
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">再生可能エネルギー<span>Green Energy</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">炭素循環と炭素固定</a></li>
+								<li><a href="/category-tag.html">木質バイオマス</a></li>
+								<li><a href="/category-tag.html">改質リグニン</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">木造都市／第2の森林<span>Secondary Forest</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">木造9F建て</a></li>
+								<li><a href="/category-tag.html">木造建築学・解体学</a></li>
+								<li><a href="/category-tag.html">木材産業</a></li>
+								<li><a href="/category-tag.html">建築規制と法律</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">林業の革新<span>Innovation</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">流通と輸送の革新</a></li>
+								<li><a href="/category-tag.html">森林サービス産業／推進地域</a></li>
+								<li><a href="/category-tag.html">森林・林業関連基本法とその改訂</a></li>
+								<li><a href="/category-tag.html">災害からの復興と森林</a></li>
+								<li><a href="/category-tag.html">新しい働き方</a></li>
+								<li><a href="/category-tag.html">森林管理の専門家（フォレスター）</a></li>
+								<li><a href="/category-tag.html">林業DX（AI／ITの活用）</a></li>
+								<li><a href="/category-tag.html">経済安全保障</a></li>
+								<li><a href="/category-tag.html">Jクレジット</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">地域創生と森林<span>Local Revitalization</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
+								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
+								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">森林文化の熟成<span>Culture</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">里山資本主義</a></li>
+								<li><a href="/category-tag.html">循環型社会</a></li>
+								<li><a href="/category-tag.html">森と芸術、メディア</a></li>
+								<li><a href="/category-tag.html">観光、山を愛する人たち</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">接続する社会的共通資本<span>Circulation &amp; Connectivity</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">大気、河川、地形</a></li>
+								<li><a href="/category-tag.html">水と土壌</a></li>
+								<li><a href="/category-tag.html">道（道路・林道・鉄道）</a></li>
+								<li><a href="/category-tag.html">菌類および生物多様性</a></li>
+								<li><a href="/category-tag.html">時間</a></li>
+							</ul>
+						</div>
+						<div class="more--child pc-none">
+							<div class="more--midahshi">
+								<a href="/page-contributors.html">執筆者一覧<span>Contributors</span></a>
+							</div>
+						</div>
+						<div class="more--child pc-none">
+							<div class="more--midahshi">
+								<a href="/page-newsletter.html">メルマガ登録<span>Newsletter</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Contents -->
+		<div class="container--second">
+			<h1 class="single">世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理<span>001</span></h1>
+			<p class="midashi--en">Canada's management by strictest forest regulations</p>
+			<p class="update--en">Updated by Masayo Yaso on March 15, 2025, 12:43 pm JST</p>
+			<!-- Contributer -->
+			<div class="contributor--wrap">
+				<p class="contributor--name">八十雅世 <small>やそ・まさよ</small></p>
+				<p class="contributor--title">情報技術開発株式会社　経営企画部・マネージャー</p>
+				<p class="contributor--desc">
+					早稲田大学第一文学部美術史学専修卒、早稲田大学大学院経営管理研究科（Waseda Business School）にてMBA取得。技術調査部門や新規事業チーム、マーケティング・プロモーション企画職などを経て、現職。2024年4月より「シュレディンガーの水曜日」編集長を兼務。<br />
+					※こちらは全投稿に入る。
+				</p>
+			</div>
+
+			<p class="mb-s">カナダは世界の森林総面積の9%にあたる3億6700万haの森林を有し、ロシアとブラジルに次ぐ世界第3の森林国です。その豊かな森林の93%は公有林で、都市の形成や農地への転用を経てもなお元来の林地の大部分が維持されており、年間伐採面積は0.2%※に留まるため、カナダの森が失われることはありません。実際、通年では伐採よりも虫害や病害、火災で失われる木々の方が多いのが現状です。</p>
+			<p class="annotation">カナダ天然資源省2023年度森林状況報告(State of the Forests Report) ※追加CSSで「annotation」入力「※」は自動で付きます。</p>
+
+			<p>カナダの森林における世界屈指の持続可能性を実現しているのは、厳格な環境法規制や慎重な管理、包括的な第三者認証です。例えば、ブリティッシュ・コロンビア(BC)州では、1992年に木材供給量審議制度が開始され、独立した存在である州のチーフ・フォレスター（首席森林管理官）が、BC州政府による最新の審査結果に基づき、今後10年間の年間許容伐採量(AAC)を決定します。AACは当該10年間において合理的な最大伐採量で、かつ長期的（予測期間は通常250年）にも持続可能であると判断された量に定められます。各州政府は定期的に総合的な木材供給量審査を行い、以下をふまえて伐採量を決定することになっています。</p>
+
+			<!-- Image -->
+			<figure class="wp-block-image size-full mb-xl">
+				<img src="/sample-images/photo-1.jpg" alt="臼井良平《Mirror》2024" class="wp-image-123" width="800" height="600" srcset="/sample-images/photo-1.jpg 300w, /sample-images/photo-1.jpg 768w, /sample-images/photo-1.jpg 800w" sizes="(max-width: 800px) 100vw, 800px" />
+				<figcaption>「MOTアニュアル2024　こうふくのしま」展示風景より臼井良平《Mirror》2024</figcaption>
+			</figure>
+
+			<h2 class="mb-s">BC州の年間伐採面積</h2>
+			<p>
+				また、カナダでは法律によって全国で伐採後の植林もしくは森林再生が義務付けられており、苗木は伐採された樹種とその地域の自生種を適切に組み合わせ、森林が元来の特徴を保持できるようにしています。さらに、伐採活動の大半がCSA、FSCもしくはSFIという3つの第三者認証制度による認証を取得しています。いずれの制度も包括的な指標を備え、新旧かつ多様な生息地の提供による水生生物や絶滅危惧種を含む森林動植物の保全をはじめ、保全価値の高い森林や天然林、生態系的に重要な林班などの保護の推進、また先住民とそのコミュニティの法的かつ伝統的権利の尊重などを基準としています。 前述の通りカナダの森林は93%が公有林で、その71%を州/準州政府、22%を連邦政府が所有し、残りの7%は私有林となっていますが、企業に伐採権を与える政府は以下に責任を持ちます。<br />
+				<a href="#" target="_blank">本文テキストリンク</a><br />
+				<strong>本文テキスト strong</strong><br />
+				<em>本文テキスト em</em><br />
+				<small>本文テキスト small</small><br />
+				<big>本文テキスト big</big>
+			</p>
+
+			<div class="propety">
+				<h3 class="mb-s">物件概要</h3>
+				<dl>
+					<dt>物件名</dt>
+					<dd>東京農業大学青雲寮</dd>
+					<dt>所在地</dt>
+					<dd>東京都世田谷区桜丘3丁目9-37</dd>
+					<dt>建築主</dt>
+					<dd>学校法人東京農業大学-37</dd>
+					<dt>主要用途</dt>
+					<dd>寄宿舎（学生寮）</dd>
+					<dt>敷地面積／延床面積</dt>
+					<dd>1,046.52m²／1,250.39m²</dd>
+					<dt>構造</dt>
+					<dd>木造 地上3階建（在来軸組工法、準耐火建築物）</dd>
+					<dt>室数</dt>
+					<dd>2人部屋 26室（52人収容）</dd>
+					<dt>工期</dt>
+					<dd>解体工事着工：2024年1月　竣工：2025年1月31日</dd>
+					<dt>設計・施工</dt>
+					<dd>住友林業株式会社</dd>
+				</dl>
+			</div>
+			<p class="annotation">上記物件概要はブロックエディタ「カスタムhtml」でコード手入力</p>
+
+			<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+				<p>ブロックエディタ引用ブロック<br />「本を読みたくても、読むことができない。」<br />さまざまな理由から、<br />読書を諦めている人がいることをご存知でしょうか。<br />他人事ではなく、自分にも降りかかる問題として、<br />「プリントディスアビリティ」の問題を、<br />知っていただきたいと思います。<br />まずは知ることが、みんなが本を読むのに困らない、<br />「読書バリアフリー」環境を目指す、第一歩です。</p>
+				<cite>（「序章　「大活字本」の世界へようこそ」より）</cite>
+			</blockquote>
+
+			<figure class="wp-block-image size-full image--full-wide"><img decoding="async" width="1600" height="810" src="https://unsplash.it/1600/810" alt="" class="wp-image-780 lazyautosizes ls-is-cached lazyloaded" /></figure>
+			<p class="caption">全幅の画像にしたい場合→画像ブロックエディタの追加CSSで「image--full-wide」入力</p>
+
+			<figure class="wp-block-image size-full parallax" style="transform: translate3d(0px, 7px, 0px) scale(1.2); will-change: transform">
+				<img decoding="async" width="1600" height="900" src="https://unsplash.it/1600/900" alt="" class="wp-image-52 lazyautosizes lazyloaded" />
+			</figure>
+			<p class="caption">全幅のparallax画像にしたい場合→画像ブロックエディタの追加CSSで「parallax」入力</p>
+
+			<div class="left wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex">
+				<div class="wp-block-button"><a class="wp-block-button__link has-text-align-left wp-element-button" href="http://style.co.jp" target="_blank" rel="noreferrer noopener">ボタン cssクラスに「left」追加</a></div>
+			</div>
+			<div class="center wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex">
+				<div class="wp-block-button"><a class="wp-block-button__link has-text-align-left wp-element-button" href="http://style.co.jp" target="_blank" rel="noreferrer noopener">ボタン cssクラスに「center」追加</a></div>
+			</div>
+			<div class="right wp-block-buttons is-content-justification-right is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex">
+				<div class="wp-block-button"><a class="wp-block-button__link has-text-align-left wp-element-button" href="http://style.co.jp" target="_blank" rel="noreferrer noopener">ボタン cssクラスに「right」追加</a></div>
+			</div>
+
+			<h3>テーブル</h3>
+			<figure class="wp-block-table is-style-regular">
+				<table>
+					<thead>
+						<tr>
+							<th class="has-text-align-left" data-align="left">ヘッダー</th>
+							<th class="has-text-align-center" data-align="center">ヘッダー1</th>
+							<th class="has-text-align-center" data-align="center">ヘッダー2</th>
+							<th class="has-text-align-center" data-align="center">ヘッダー3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="has-text-align-left" data-align="left">行1</td>
+							<td class="has-text-align-center" data-align="center">列1</td>
+							<td class="has-text-align-center" data-align="center">列2</td>
+							<td class="has-text-align-center" data-align="center">列3</td>
+						</tr>
+						<tr>
+							<td class="has-text-align-left" data-align="left">行2</td>
+							<td class="has-text-align-center" data-align="center"></td>
+							<td class="has-text-align-center" data-align="center"></td>
+							<td class="has-text-align-center" data-align="center"></td>
+						</tr>
+						<tr>
+							<td class="has-text-align-left" data-align="left">行3</td>
+							<td class="has-text-align-center" data-align="center"></td>
+							<td class="has-text-align-center" data-align="center"></td>
+							<td class="has-text-align-center" data-align="center"></td>
+						</tr>
+						<tr>
+							<td class="has-text-align-left" data-align="left">行4</td>
+							<td class="has-text-align-center" data-align="center"></td>
+							<td class="has-text-align-center" data-align="center"></td>
+							<td class="has-text-align-center" data-align="center"></td>
+						</tr>
+					</tbody>
+				</table>
+				<figcaption class="wp-element-caption">テーブルキャプション</figcaption>
+			</figure>
+
+			<h3>テーブル イベントなど用</h3>
+			<figure class="wp-block-table is-style-regular event">
+				<table>
+					<tbody>
+						<tr>
+							<th class="has-text-align-left" data-align="left">イベント名称</th>
+							<td class="has-text-align-left" data-align="left"><strong>プラチナ再生可能エネルギー産業イニシアティブ勉強会</strong></td>
+						</tr>
+						<tr>
+							<th class="has-text-align-left" data-align="left">開催日時</th>
+							<td class="has-text-align-left" data-align="left">2025年7月20日（水曜）19:00～20:30</td>
+						</tr>
+						<tr>
+							<th class="has-text-align-left" data-align="left">講師</th>
+							<td class="has-text-align-left" data-align="left"><strong>小宮山 宏</strong> <small>（株式会社三菱総合研究所　理事長）</small><br /><small>1972年東京大学大学院工学系研究科博士課程修了後、2000年同大学大学院工学系研究科長・工学部長、2003年同大学副学長を経て、2005年4月から2009年3月まで東京大学総長。2009年4月より三菱総合研究所理事長に就任。2010年8月には、「プラチナ社会」の実現に向けたイノベーション促進に取り組む「プラチナ構想ネットワーク」を設立し、会長に就任。</small></td>
+						</tr>
+						<tr>
+							<th class="has-text-align-left" data-align="left">イベント形態</th>
+							<td class="has-text-align-left" data-align="left">Zoomウェビナー（Webinar）を利用したオンラインイベントです。<br />お申込みいただいた方には参加URLを事前にメールにてお送りします。</td>
+						</tr>
+						<tr>
+							<th class="has-text-align-left" data-align="left">参加料</th>
+							<td class="has-text-align-left" data-align="left">無料</td>
+						</tr>
+						<tr>
+							<th class="has-text-align-left" data-align="left">参加方法</th>
+							<td class="has-text-align-left" data-align="left">
+								<a href="#" target="_blank" rel="noreferrer noopener"><strong>お申し込みはこちら</strong></a>
+							</td>
+						</tr>
+						<tr>
+							<th class="has-text-align-left" data-align="left">申し込み期限</th>
+							<td class="has-text-align-left" data-align="left">当日2025年7月20日の16：00までとさせていただきます。</td>
+						</tr>
+						<tr>
+							<th class="has-text-align-left" data-align="left">主催</th>
+							<td class="has-text-align-left" data-align="left">一般社団法人プラチナ構想ネットワーク</td>
+						</tr>
+					</tbody>
+				</table>
+				<figcaption class="wp-element-caption">※ ブロックエディタ　表の追加cssクラスに「event」追加</figcaption>
+			</figure>
+
+			<h3>区切り線</h3>
+			<figure class="wp-block-separator is-style-default">
+				<hr class="wp-block-separator has-alpha-channel-opacity" />
+			</figure>
+
+			<ul class="single wp-block-list">
+				<li>リスト表示（ulタグ） 追加cssクラスに「single」追加</li>
+				<li>リスト表示</li>
+				<li>リスト表示</li>
+				<li>リスト表示</li>
+				<li>リスト表示</li>
+			</ul>
+
+			<ul class="single--decimal wp-block-list">
+				<li>ナンバー付きリスト（olタグ） 追加cssクラスに「single--decimal」追加</li>
+				<li>ナンバー付きリスト</li>
+				<li>ナンバー付きリスト</li>
+				<li>ナンバー付きリスト</li>
+			</ul>
+
+			<h3>参考資料など</h3>
+			<ol class="reference wp-block-list">
+				<li>ナンバー付きリスト（olタグ） 追加cssクラスに「reference」追加</li>
+				<li>大川茂樹（2005）「How to write your report? ; レポートの書き方」[online] www.ok.net.it-chiba.ac.jp/okawa/class/report.html（参照2006-4-16）.</li>
+				<li>浜本純逸（1975）「実力を高めるリポートの書き方」,平井昌夫・大熊五郎編『情報禍時代のことばの生活』（解釈と観賞別冊）, pp.109-142, 至文堂.</li>
+				<li>浜田麻里・平尾得子・由井紀久子（1997）『論文ワークブック：大学生と留学生のための』くろしお出版.</li>
+			</ol>
+
+			<figure class="video--wrap wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+				<div class="wp-block-embed__wrapper">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/bH3hOCUDpxU?si=WSGylQqv2Cy6LT14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</figure>
+			<p class="caption mb-xxl">※Youtube埋め込み　ブロックエディタの追加CSSで「video--wrap」入力</p>
+
+			<!-- Tags -->
+			<dl class="tags">
+				<dt>Tags</dt>
+				<dd>
+					<ul>
+						<li><a href="/category-tag.html">炭素循環と炭素固定</a></li>
+						<li><a href="/category-tag.html">木質バイオマス</a></li>
+						<li><a href="/category-tag.html">森林・林業関連基本法とその改訂</a></li>
+						<li><a href="/category-tag.html">木造9F建て</a></li>
+						<li><a href="/category-tag.html">森林・林業関連基本法とその改訂</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<!-- Related Articles -->
+			<div class="related--wrap">
+				<h4>Related Articles</h4>
+				<ul>
+					<li>
+						<a href="/single.html"></a>
+						純木造3階建て 東京農業大学 学生寮で「木」の効果検証<br />
+						<span class="number">003</span>
+						<span>2025.04.05</span>
+					</li>
+					<li>
+						<a href="/single.html"></a>
+						2025年日本国際博覧会（大阪・関西万博） 「大屋根リング記念式典」を開催<br />
+						<span class="number">045</span>
+						<span>2025.04.05</span>
+					</li>
+					<li>
+						<a href="/single.html"></a>
+						世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理<br />
+						<span class="number">023</span>
+						<span>2025.04.05</span>
+					</li>
+				</ul>
+			</div>
+			<!-- Popular Articles -->
+			<div class="related--wrap">
+				<h4>Popular Articles</h4>
+				<ul>
+					<li>
+						<a href="/single.html"></a>
+						純木造3階建て 東京農業大学 学生寮で「木」の効果検証<br />
+						<span class="number">003</span>
+						<span>2025.04.05</span>
+					</li>
+					<li>
+						<a href="/single.html"></a>
+						2025年日本国際博覧会（大阪・関西万博） 「大屋根リング記念式典」を開催<br />
+						<span class="number">045</span>
+						<span>2025.04.05</span>
+					</li>
+					<li>
+						<a href="/single.html"></a>
+						世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理<br />
+						<span class="number">023</span>
+						<span>2025.04.05</span>
+					</li>
+				</ul>
+			</div>
+			<!-- Social Share Button -->
+			<ul class="sns--wrap">
+				<li class="icon-fb">
+					<a target="_blank" href="https://www.facebook.com/">
+						<svg viewBox="0 0 32 32">
+							<circle cx="16" cy="16" r="16" />
+							<path d="m22.27 20.08.74-4.86h-4.66v-3.15c0-1.33.65-2.63 2.74-2.63h2.12v-4.14s-1.92-.33-3.76-.33c-3.84 0-6.35 2.33-6.35 6.54v3.7h-4.27v4.86h4.27v11.74c.86.13 1.73.2 2.63.2s1.77-.07 2.63-.2v-11.74h3.92z" fill="#fff" />
+						</svg>
+					</a>
+				</li>
+				<li class="icon-x">
+					<a target="_blank" href="https://x.com/">
+						<svg viewBox="0 0 32 32">
+							<circle cx="16" cy="16" r="16" />
+							<path d="m17.64 14.68 6.43-7.32h-1.52l-5.58 6.35-4.46-6.35h-5.14l6.74 9.61-6.74 7.67h1.52l5.89-6.71 4.71 6.71h5.14m-15.19-16.15h2.34l10.77 15.08h-2.34" fill="#fff" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Newsletter Area -->
+		<div class="newsletter--ad">
+			<dl>
+				<dt><img src="/asset/images/newsletter.svg" alt="森林循環経済 Newsletter" width="300" height="61" /></dt>
+				<dd>ニューズレター（メルマガ）「森林循環経済」の購読はこちらから（無料）</dd>
+			</dl>
+			<a href="page-newsletter.html" class="column--link"></a>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="foot--wrap">
+				<div class="foot--menu">
+					<div class="logo">
+						<a href="/"><img src="/asset/images/logo.svg" alt="森林循環経済 FOREST CIRCULARITY" width="373" height="33" /></a>
+					</div>
+					<ul>
+						<li>
+							<a target="_blank" href="https://www.facebook.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m22.27 20.08.74-4.86h-4.66v-3.15c0-1.33.65-2.63 2.74-2.63h2.12v-4.14s-1.92-.33-3.76-.33c-3.84 0-6.35 2.33-6.35 6.54v3.7h-4.27v4.86h4.27v11.74c.86.13 1.73.2 2.63.2s1.77-.07 2.63-.2v-11.74h3.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://x.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m17.64 14.68 6.43-7.32h-1.52l-5.58 6.35-4.46-6.35h-5.14l6.74 9.61-6.74 7.67h1.52l5.89-6.71 4.71 6.71h5.14m-15.19-16.15h2.34l10.77 15.08h-2.34" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="/feed/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<g fill="#fff">
+										<path d="m10.28 24.11c-1.2 0-2.17-.97-2.17-2.17s.97-2.16 2.17-2.16 2.17.97 2.17 2.16-.97 2.17-2.17 2.17z" />
+										<path d="m15.46 24.11c-.04-4.03-3.31-7.3-7.35-7.34v-3.21c5.81.04 10.52 4.74 10.56 10.55z" />
+										<path d="m20.9 24.11c-.02-7.06-5.74-12.76-12.79-12.79v-3.21c8.83.03 15.98 7.18 16 16z" />
+									</g>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="/contact/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m25.5 11.13c0 .56-.17 1.09-.52 1.6s-.78.94-1.29 1.3c-2.66 1.84-4.31 2.99-4.96 3.45-.07.05-.22.16-.45.32-.23.17-.42.3-.57.4s-.34.22-.55.34c-.22.13-.42.22-.61.29-.19.06-.37.1-.53.1h-.02c-.16 0-.34-.03-.53-.1-.19-.06-.39-.16-.61-.29s-.4-.24-.55-.34-.34-.24-.57-.4c-.23-.17-.38-.27-.45-.32-.64-.45-1.57-1.1-2.78-1.94s-1.93-1.34-2.17-1.51c-.44-.3-.85-.71-1.24-1.22s-.58-1-.58-1.45c0-.55.15-1.01.44-1.38s.71-.55 1.26-.55h15.61c.46 0 .86.17 1.19.5.34.33.5.73.5 1.2zm0 3.12v8.42c0 .47-.17.87-.5 1.2s-.73.5-1.2.5h-15.61c-.47 0-.87-.17-1.2-.5s-.5-.73-.5-1.2v-8.42c.31.35.67.65 1.07.92 2.56 1.74 4.32 2.96 5.27 3.66.4.3.73.53.98.69.25.17.58.34 1 .51s.81.26 1.17.26h.02c.36 0 .75-.09 1.17-.26s.75-.34 1-.51.58-.4.98-.69c1.2-.87 2.96-2.09 5.28-3.66.4-.28.76-.58 1.06-.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="foot--nav">
+					<ul>
+						<li><a href="/page.html">「森林循環経済」概要</a></li>
+						<li><a href="/page.html">協賛（協力）企業一覧</a></li>
+						<li><a href="/page.html">著作権について</a></li>
+						<li><a href="/page.html">外部配信について</a></li>
+						<li><a href="/page.html">個人情報保護について</a></li>
+						<li><a href="/page.html">運営会社（法人） および編集部について</a></li>
+					</ul>
+				</div>
+				<div class="foot--bottom">
+					<div class="copyright">&#169; 2025 forestcircularity All rights reserved.</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Go page top
+				============================================= -->
+		<div id="page_top">
+			<a href="#">
+				<svg viewBox="0 0 60.25 50.88">
+					<g fill="#fff">
+						<path d="m56.71 50.88-26.59-26.59-26.58 26.59-3.54-3.53 30.12-30.13 30.13 30.13z" />
+						<path d="m.66 0h58.92v5.1h-58.92z" />
+					</g>
+				</svg>
+			</a>
+		</div>
+		<script src="/asset/js/function.min.js"></script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+		<script>
+			const image = document.getElementsByClassName("parallax");
+			new simpleParallax(image, {
+				scale: 1.2,
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="/apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
+		<link href="https://www.localknowledge.jp/wp-includes/css/dist/block-library/style.min.css" rel="stylesheet" /><!--標準ブロックエディタのcss　wordpress投入時は削除-->
+		<link href="/asset/css/common.min.css" rel="stylesheet" />
+		<title>森林循環経済 | FOREST CIRCULARITY</title>
+		
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="js-header">
+			<div class="header--wrap">
+				<div class="header--left">
+					<form action="search.html">
+						<input type="text" name="s" placeholder="サイト内検索" />
+						<button type="submit"><img src="/asset/images/icon-search.svg" alt="" width="20" height="20" /></button>
+					</form>
+				</div>
+				<div class="header--logo">
+					<a href="/"><img src="/asset/images/logo.svg" alt="森林循環経済 FOREST CIRCULARITY" width="373" height="33" /></a>
+				</div>
+				<div class="header--right">
+					<ul>
+						<li>
+							執筆者一覧<span>Contributors</span>
+							<a href="/page-contributors.html"></a>
+						</li>
+						<li>
+							メルマガ登録<span>Newsletter</span>
+							<a href="/page-newsletter.html"></a>
+						</li>
+						<li class="icon-fb">
+							<a target="_blank" href="https://www.facebook.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m22.27 20.08.74-4.86h-4.66v-3.15c0-1.33.65-2.63 2.74-2.63h2.12v-4.14s-1.92-.33-3.76-.33c-3.84 0-6.35 2.33-6.35 6.54v3.7h-4.27v4.86h4.27v11.74c.86.13 1.73.2 2.63.2s1.77-.07 2.63-.2v-11.74h3.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li class="icon-x">
+							<a target="_blank" href="https://x.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m17.64 14.68 6.43-7.32h-1.52l-5.58 6.35-4.46-6.35h-5.14l6.74 9.61-6.74 7.67h1.52l5.89-6.71 4.71 6.71h5.14m-15.19-16.15h2.34l10.77 15.08h-2.34" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li class="icon-rss">
+							<a target="_blank" href="/feed/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<g fill="#fff">
+										<path d="m10.28 24.11c-1.2 0-2.17-.97-2.17-2.17s.97-2.16 2.17-2.16 2.17.97 2.17 2.16-.97 2.17-2.17 2.17z" />
+										<path d="m15.46 24.11c-.04-4.03-3.31-7.3-7.35-7.34v-3.21c5.81.04 10.52 4.74 10.56 10.55z" />
+										<path d="m20.9 24.11c-.02-7.06-5.74-12.76-12.79-12.79v-3.21c8.83.03 15.98 7.18 16 16z" />
+									</g>
+								</svg>
+							</a>
+						</li>
+						<li class="icon-contact">
+							<a target="_blank" href="/contact/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m25.5 11.13c0 .56-.17 1.09-.52 1.6s-.78.94-1.29 1.3c-2.66 1.84-4.31 2.99-4.96 3.45-.07.05-.22.16-.45.32-.23.17-.42.3-.57.4s-.34.22-.55.34c-.22.13-.42.22-.61.29-.19.06-.37.1-.53.1h-.02c-.16 0-.34-.03-.53-.1-.19-.06-.39-.16-.61-.29s-.4-.24-.55-.34-.34-.24-.57-.4c-.23-.17-.38-.27-.45-.32-.64-.45-1.57-1.1-2.78-1.94s-1.93-1.34-2.17-1.51c-.44-.3-.85-.71-1.24-1.22s-.58-1-.58-1.45c0-.55.15-1.01.44-1.38s.71-.55 1.26-.55h15.61c.46 0 .86.17 1.19.5.34.33.5.73.5 1.2zm0 3.12v8.42c0 .47-.17.87-.5 1.2s-.73.5-1.2.5h-15.61c-.47 0-.87-.17-1.2-.5s-.5-.73-.5-1.2v-8.42c.31.35.67.65 1.07.92 2.56 1.74 4.32 2.96 5.27 3.66.4.3.73.53.98.69.25.17.58.34 1 .51s.81.26 1.17.26h.02c.36 0 .75-.09 1.17-.26s.75-.34 1-.51.58-.4.98-.69c1.2-.87 2.96-2.09 5.28-3.66.4-.28.76-.58 1.06-.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header--nav">
+				<ul>
+					<li>
+						再生可能エネルギー<span>Green Energy</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						木造都市／第2の森林<span>Secondary Forest</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						林業の革新<span>Innovation</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						地域創生と森林<span>Local Revitalization</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						森林文化の熟成<span>Culture</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						接続する社会的共通資本<span>Circulation &amp; Connectivity</span>
+						<a href="/category-tag.html"></a>
+					</li>
+				</ul>
+			</div>
+			<!-- SP Menu -->
+			<div class="open--btn">
+				<img class="on" src="/asset/images/icon-search.svg" alt="" width="20" height="20" />
+				<img class="off" src="/asset/images/icon-close.svg" alt="" width="20" height="20" />
+			</div>
+			<div id="search--wrap" class="panelactive">
+				<form role="search" id="searchform" action="/search.html">
+					<input type="text" name="s" id="search--text" placeholder="サイト内検索" />
+					<button type="submit"><img src="/asset/images/icon-search.svg" alt="" width="20" height="20" /></button>
+				</form>
+			</div>
+			<div class="hamburger" id="js_hamburger">
+				<span class="hamburger-linetop"></span>
+				<span class="hamburger-linecenter"></span>
+				<span class="hamburger-linebottom"></span>
+			</div>
+			<!-- More Menu -->
+			<div class="more--menu">
+				<div class="more--wrap-base">
+					<div class="more--wrap">
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">再生可能エネルギー<span>Green Energy</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">炭素循環と炭素固定</a></li>
+								<li><a href="/category-tag.html">木質バイオマス</a></li>
+								<li><a href="/category-tag.html">改質リグニン</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">木造都市／第2の森林<span>Secondary Forest</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">木造9F建て</a></li>
+								<li><a href="/category-tag.html">木造建築学・解体学</a></li>
+								<li><a href="/category-tag.html">木材産業</a></li>
+								<li><a href="/category-tag.html">建築規制と法律</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">林業の革新<span>Innovation</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">流通と輸送の革新</a></li>
+								<li><a href="/category-tag.html">森林サービス産業／推進地域</a></li>
+								<li><a href="/category-tag.html">森林・林業関連基本法とその改訂</a></li>
+								<li><a href="/category-tag.html">災害からの復興と森林</a></li>
+								<li><a href="/category-tag.html">新しい働き方</a></li>
+								<li><a href="/category-tag.html">森林管理の専門家（フォレスター）</a></li>
+								<li><a href="/category-tag.html">林業DX（AI／ITの活用）</a></li>
+								<li><a href="/category-tag.html">経済安全保障</a></li>
+								<li><a href="/category-tag.html">Jクレジット</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">地域創生と森林<span>Local Revitalization</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
+								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
+								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">森林文化の熟成<span>Culture</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">里山資本主義</a></li>
+								<li><a href="/category-tag.html">循環型社会</a></li>
+								<li><a href="/category-tag.html">森と芸術、メディア</a></li>
+								<li><a href="/category-tag.html">観光、山を愛する人たち</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">接続する社会的共通資本<span>Circulation &amp; Connectivity</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">大気、河川、地形</a></li>
+								<li><a href="/category-tag.html">水と土壌</a></li>
+								<li><a href="/category-tag.html">道（道路・林道・鉄道）</a></li>
+								<li><a href="/category-tag.html">菌類および生物多様性</a></li>
+								<li><a href="/category-tag.html">時間</a></li>
+							</ul>
+						</div>
+						<div class="more--child pc-none">
+							<div class="more--midahshi">
+								<a href="/page-contributors.html">執筆者一覧<span>Contributors</span></a>
+							</div>
+						</div>
+						<div class="more--child pc-none">
+							<div class="more--midahshi">
+								<a href="/page-newsletter.html">メルマガ登録<span>Newsletter</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Contents -->
+		<div class="container--second">
+			<div class="archive--title">
+				<h1>個人情報保護について<span>Privacy Policy</span></h1>
+			</div>
+
+			<p class="mb-l">本サイトを運営するスタイル株式会社は、特定の個人を識別できる情報（以下、個人情報）の重要性を認識し、その適正な収集、利用、保護をはかるとともに、安全管理を行うため、個人情報保護方針を定め、次のとおり運用します。</p>
+
+			<h3 class="mb-xs">1） 個人情報の管理について</h3>
+			<p>個人情報の保護に関する運用要領を定めるとともに、個人情報の管理責任者を置いて適切に管理します。</p>
+			<h3 class="mb-xs">2） 個人情報の収集について</h3>
+			<p>個人情報の収集に際しては、予め利用目的を定め、お知らせするとともに、その目的の達成に必要な範囲内で、適正な方法により収集、利用いたします。</p>
+			<h3 class="mb-xs">3） 個人情報の第三者提供について</h3>
+			<p class="mb-xs">ご本人から承諾を得たとき、法令等に基づくとき、または正当な理由のあるとき、あるいは次のいずれかに該当する場合を除き、個人情報を第三者に提供しません。</p>
+			<ul class="single pb-xl wp-block-list">
+				<li>個人を識別し得ない「統計データ」として開示する場合</li>
+				<li>有料サービスのご利用や商品注文等に伴うクレジットカード等の決済手続きに際してユーザーの銀行口座やクレジットカード等の正当性を金融機関、カード会社などに確認する場合</li>
+				<li>利用目的の達成に必要な範囲内で、第三者に個人情報の取り扱いを委託する場合</li>
+				<li>法令などの定めにより開示を要求された場合</li>
+			</ul>
+			<h3 class="mb-xs">4） 個人情報保護のための技術的措置について</h3>
+			<p>個人情報の改ざん、漏洩、不正な侵入などを防止するために、合理的な諸施策を講じます。</p>
+			<h3 class="mb-xs">5） 第三者への委託について</h3>
+			<p>個人情報の処理を外部に委託する場合は、適正な委託先を選定するとともに個人情報保護に関する契約を委託先と取り交わします。</p>
+			<h3 class="mb-xs">6） 個人情報の確認・訂正について</h3>
+			<p>ご本人から個人情報の内容の確認や訂正のお申し出があった場合は、合理的な範囲内で適切・迅速に対応いたします。保有個人情報の開示・訂正については以下にご連絡下さい。</p>
+			<p>
+				スタイル株式会社　個人情報取扱担当<br />
+				E-mail: <a href="mailto:style@style.co.jp">style@style.co.jp</a>
+			</p>
+			<h3 class="mb-xs">7） プライバシーポリシーの変更について</h3>
+			<p>スタイル株式会社は、社会情勢の変化、技術の進歩、個人情報保護法の改訂等に応じ、事前の予告なくプライバシーポリシーを変更することがあります。</p>
+			<h3 class="mb-xs" class="center">当社が運営するウェブサイトおよびサービスにおけるプライバシーポリシー</h3>
+			<p>スタイル株式会社が運営するウェブサイトおよびサービスでは、皆様の住所、氏名、電話番号、メールアドレスなどの個人情報について、「個人情報保護方針」にもとづき、細心の注意を払って取り扱います。</p>
+			<h3 class="mb-xs">1） 個人情報の共有範囲</h3>
+			<p>個人情報取得時にお知らせした範囲とします。</p>
+			<h3 class="mb-xs">2） 個人情報の利用目的</h3>
+			<p class="mb-xs">以下に示す利用目的達成のために、皆様から個人情報をご提供いただく場合があります。</p>
+			<ul class="single pb-xl wp-block-list">
+				<li>ご登録いただいた会員様向けサービスの提供のため</li>
+				<li>ご注文、ご応募いただいた商品、賞品の発送のため</li>
+				<li>アンケート、イベント等にご協力いただいた方へのご報告のため</li>
+				<li>ダイレクトメールや電子メール等による、情報の提供のため</li>
+				<li>ウェブサイトのサービス向上・改善、新しいサービス開発のため</li>
+				<li>その他、個人情報取得時にお知らせした目的のため</li>
+			</ul>
+			<p>皆様ご自身の判断により、個人情報の提供の可否を選択できます。ただし、ご提供いただけない場合はサービスをご利用いただけない場合があります。</p>
+			<h3 class="mb-xs">3） 個人情報の第三者提供について</h3>
+			<p class="mb-xs">ご本人から承諾を得たとき、法令等に基づくとき、または正当な理由のあるとき、あるいは次のいずれかに該当する場合を除き、個人情報を第三者に提供しません。</p>
+			<ul class="single pb-xl wp-block-list">
+				<li>個人を識別し得ない「統計データ」として開示する場合・有料サービスのご利用や商品注文等に伴うクレジットカード等の決済手続きに際してユーザーの銀行口座やクレジットカード等の正当性を金融機関、カード会社などに確認する場合</li>
+				<li>利用目的の達成に必要な範囲内で、第三者に個人情報の取り扱いを委託する場合</li>
+				<li>法令などの定めにより開示を要求された場合</li>
+			</ul>
+			<h3 class="mb-xs">4） クッキーの利用について</h3>
+			<p>クッキー（Cookie）とは、ウェブページをご覧になった際にウェブサーバと皆様のブラウザの間で送受信される情報のことで、皆様がご利用のパソコンやモバイル端末でクッキーを受け取る設定にしている場合に、ブラウザの所定の場所に記録されます。サイトでは、クッキーに残った情報を利用して、皆様がより満足いただけるよう、表示を変えたりすることができます。</p>
+			<p>皆様は、ご自身でクッキーの受け取りを拒否する、あるいはクッキーを受け取った場合に警告を表示させるよう、ブラウザの設定を変えることが可能です。ただし、その際はサイトによってはサービスや機能が一部ご利用いただけない場合があります。</p>
+			<h3 class="mb-xs">5） 第三者配信事業者の広告配信について</h3>
+			<p>当社が提供するウェブサイトの一部では、サイト内に表示する広告について、第三者配信事業者に対し広告配信を委託しています。上記の広告配信を目的として、当社の委託先である広告配信業者も、皆様のクッキーを取得し、利用している場合があります。その場合に取得されるクッキーについては、当社のウェブサーバではなく、配信事業者のサーバに蓄積され、管理されています。</p>
+			<h3 class="mb-xs">6） アクセスログの取得</h3>
+			<p>当社が提供するウェブサイトでは、皆様の利便性およびサービス品質の向上を目的として、皆様のアクセス情報をアクセスログという形で取得し、一定期間保存しております。アクセスログに含まれる情報はアクセスした日時、回数、IPアドレス、使用ブラウザの種類、クッキー情報等であり、個人を識別する情報は取得しておりません。</p>
+			<h3 class="mb-xs">7） 外部リンクに関するご注意</h3>
+			<p>当社が提供するウェブサイトの中には、外部へのリンクが含まれている場合があります。このような外部のウェブサイトにおいての皆様の個人情報の取り扱いにつきましては、責任を負いかねますのでご注意ください。</p>
+			<h3 class="mb-xs" class="center">商標について</h3>
+			<p>スタイル株式会社で運営されているサイト上で記載されている製品/サービス名、企業名等はそれぞれ商標を所有する団体・組織の登録商標であり、商標名は記事編集を目的として利用します。</p>
+		</div>
+		<!-- Footer -->
+		<footer>
+			<div class="foot--wrap">
+				<div class="foot--menu">
+					<div class="logo">
+						<a href="/"><img src="/asset/images/logo.svg" alt="森林循環経済 FOREST CIRCULARITY" width="373" height="33" /></a>
+					</div>
+					<ul>
+						<li>
+							<a target="_blank" href="https://www.facebook.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m22.27 20.08.74-4.86h-4.66v-3.15c0-1.33.65-2.63 2.74-2.63h2.12v-4.14s-1.92-.33-3.76-.33c-3.84 0-6.35 2.33-6.35 6.54v3.7h-4.27v4.86h4.27v11.74c.86.13 1.73.2 2.63.2s1.77-.07 2.63-.2v-11.74h3.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://x.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m17.64 14.68 6.43-7.32h-1.52l-5.58 6.35-4.46-6.35h-5.14l6.74 9.61-6.74 7.67h1.52l5.89-6.71 4.71 6.71h5.14m-15.19-16.15h2.34l10.77 15.08h-2.34" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="/feed/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<g fill="#fff">
+										<path d="m10.28 24.11c-1.2 0-2.17-.97-2.17-2.17s.97-2.16 2.17-2.16 2.17.97 2.17 2.16-.97 2.17-2.17 2.17z" />
+										<path d="m15.46 24.11c-.04-4.03-3.31-7.3-7.35-7.34v-3.21c5.81.04 10.52 4.74 10.56 10.55z" />
+										<path d="m20.9 24.11c-.02-7.06-5.74-12.76-12.79-12.79v-3.21c8.83.03 15.98 7.18 16 16z" />
+									</g>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="/contact/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m25.5 11.13c0 .56-.17 1.09-.52 1.6s-.78.94-1.29 1.3c-2.66 1.84-4.31 2.99-4.96 3.45-.07.05-.22.16-.45.32-.23.17-.42.3-.57.4s-.34.22-.55.34c-.22.13-.42.22-.61.29-.19.06-.37.1-.53.1h-.02c-.16 0-.34-.03-.53-.1-.19-.06-.39-.16-.61-.29s-.4-.24-.55-.34-.34-.24-.57-.4c-.23-.17-.38-.27-.45-.32-.64-.45-1.57-1.1-2.78-1.94s-1.93-1.34-2.17-1.51c-.44-.3-.85-.71-1.24-1.22s-.58-1-.58-1.45c0-.55.15-1.01.44-1.38s.71-.55 1.26-.55h15.61c.46 0 .86.17 1.19.5.34.33.5.73.5 1.2zm0 3.12v8.42c0 .47-.17.87-.5 1.2s-.73.5-1.2.5h-15.61c-.47 0-.87-.17-1.2-.5s-.5-.73-.5-1.2v-8.42c.31.35.67.65 1.07.92 2.56 1.74 4.32 2.96 5.27 3.66.4.3.73.53.98.69.25.17.58.34 1 .51s.81.26 1.17.26h.02c.36 0 .75-.09 1.17-.26s.75-.34 1-.51.58-.4.98-.69c1.2-.87 2.96-2.09 5.28-3.66.4-.28.76-.58 1.06-.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="foot--nav">
+					<ul>
+						<li><a href="/page.html">「森林循環経済」概要</a></li>
+						<li><a href="/page.html">協賛（協力）企業一覧</a></li>
+						<li><a href="/page.html">著作権について</a></li>
+						<li><a href="/page.html">外部配信について</a></li>
+						<li><a href="/page.html">個人情報保護について</a></li>
+						<li><a href="/page.html">運営会社（法人） および編集部について</a></li>
+					</ul>
+				</div>
+				<div class="foot--bottom">
+					<div class="copyright">&#169; 2025 forestcircularity All rights reserved.</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Go page top
+				============================================= -->
+		<div id="page_top">
+			<a href="#">
+				<svg viewBox="0 0 60.25 50.88">
+					<g fill="#fff">
+						<path d="m56.71 50.88-26.59-26.59-26.58 26.59-3.54-3.53 30.12-30.13 30.13 30.13z" />
+						<path d="m.66 0h58.92v5.1h-58.92z" />
+					</g>
+				</svg>
+			</a>
+		</div>
+		<script src="/asset/js/function.min.js"></script>
+		
+	</body>
+</html>

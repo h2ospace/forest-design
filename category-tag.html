@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="/apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
+		<link href="https://www.localknowledge.jp/wp-includes/css/dist/block-library/style.min.css" rel="stylesheet" /><!--標準ブロックエディタのcss　wordpress投入時は削除-->
+		<link href="/asset/css/common.min.css" rel="stylesheet" />
+		<title>森林循環経済 | FOREST CIRCULARITY</title>
+		
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="js-header">
+			<div class="header--wrap">
+				<div class="header--left">
+					<form action="search.html">
+						<input type="text" name="s" placeholder="サイト内検索" />
+						<button type="submit"><img src="/asset/images/icon-search.svg" alt="" width="20" height="20" /></button>
+					</form>
+				</div>
+				<div class="header--logo">
+					<a href="/"><img src="/asset/images/logo.svg" alt="森林循環経済 FOREST CIRCULARITY" width="373" height="33" /></a>
+				</div>
+				<div class="header--right">
+					<ul>
+						<li>
+							執筆者一覧<span>Contributors</span>
+							<a href="/page-contributors.html"></a>
+						</li>
+						<li>
+							メルマガ登録<span>Newsletter</span>
+							<a href="/page-newsletter.html"></a>
+						</li>
+						<li class="icon-fb">
+							<a target="_blank" href="https://www.facebook.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m22.27 20.08.74-4.86h-4.66v-3.15c0-1.33.65-2.63 2.74-2.63h2.12v-4.14s-1.92-.33-3.76-.33c-3.84 0-6.35 2.33-6.35 6.54v3.7h-4.27v4.86h4.27v11.74c.86.13 1.73.2 2.63.2s1.77-.07 2.63-.2v-11.74h3.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li class="icon-x">
+							<a target="_blank" href="https://x.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m17.64 14.68 6.43-7.32h-1.52l-5.58 6.35-4.46-6.35h-5.14l6.74 9.61-6.74 7.67h1.52l5.89-6.71 4.71 6.71h5.14m-15.19-16.15h2.34l10.77 15.08h-2.34" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li class="icon-rss">
+							<a target="_blank" href="/feed/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<g fill="#fff">
+										<path d="m10.28 24.11c-1.2 0-2.17-.97-2.17-2.17s.97-2.16 2.17-2.16 2.17.97 2.17 2.16-.97 2.17-2.17 2.17z" />
+										<path d="m15.46 24.11c-.04-4.03-3.31-7.3-7.35-7.34v-3.21c5.81.04 10.52 4.74 10.56 10.55z" />
+										<path d="m20.9 24.11c-.02-7.06-5.74-12.76-12.79-12.79v-3.21c8.83.03 15.98 7.18 16 16z" />
+									</g>
+								</svg>
+							</a>
+						</li>
+						<li class="icon-contact">
+							<a target="_blank" href="/contact/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m25.5 11.13c0 .56-.17 1.09-.52 1.6s-.78.94-1.29 1.3c-2.66 1.84-4.31 2.99-4.96 3.45-.07.05-.22.16-.45.32-.23.17-.42.3-.57.4s-.34.22-.55.34c-.22.13-.42.22-.61.29-.19.06-.37.1-.53.1h-.02c-.16 0-.34-.03-.53-.1-.19-.06-.39-.16-.61-.29s-.4-.24-.55-.34-.34-.24-.57-.4c-.23-.17-.38-.27-.45-.32-.64-.45-1.57-1.1-2.78-1.94s-1.93-1.34-2.17-1.51c-.44-.3-.85-.71-1.24-1.22s-.58-1-.58-1.45c0-.55.15-1.01.44-1.38s.71-.55 1.26-.55h15.61c.46 0 .86.17 1.19.5.34.33.5.73.5 1.2zm0 3.12v8.42c0 .47-.17.87-.5 1.2s-.73.5-1.2.5h-15.61c-.47 0-.87-.17-1.2-.5s-.5-.73-.5-1.2v-8.42c.31.35.67.65 1.07.92 2.56 1.74 4.32 2.96 5.27 3.66.4.3.73.53.98.69.25.17.58.34 1 .51s.81.26 1.17.26h.02c.36 0 .75-.09 1.17-.26s.75-.34 1-.51.58-.4.98-.69c1.2-.87 2.96-2.09 5.28-3.66.4-.28.76-.58 1.06-.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header--nav">
+				<ul>
+					<li>
+						再生可能エネルギー<span>Green Energy</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						木造都市／第2の森林<span>Secondary Forest</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						林業の革新<span>Innovation</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						地域創生と森林<span>Local Revitalization</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						森林文化の熟成<span>Culture</span>
+						<a href="/category-tag.html"></a>
+					</li>
+					<li>
+						接続する社会的共通資本<span>Circulation &amp; Connectivity</span>
+						<a href="/category-tag.html"></a>
+					</li>
+				</ul>
+			</div>
+			<!-- SP Menu -->
+			<div class="open--btn">
+				<img class="on" src="/asset/images/icon-search.svg" alt="" width="20" height="20" />
+				<img class="off" src="/asset/images/icon-close.svg" alt="" width="20" height="20" />
+			</div>
+			<div id="search--wrap" class="panelactive">
+				<form role="search" id="searchform" action="/search.html">
+					<input type="text" name="s" id="search--text" placeholder="サイト内検索" />
+					<button type="submit"><img src="/asset/images/icon-search.svg" alt="" width="20" height="20" /></button>
+				</form>
+			</div>
+			<div class="hamburger" id="js_hamburger">
+				<span class="hamburger-linetop"></span>
+				<span class="hamburger-linecenter"></span>
+				<span class="hamburger-linebottom"></span>
+			</div>
+			<!-- More Menu -->
+			<div class="more--menu">
+				<div class="more--wrap-base">
+					<div class="more--wrap">
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">再生可能エネルギー<span>Green Energy</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">炭素循環と炭素固定</a></li>
+								<li><a href="/category-tag.html">木質バイオマス</a></li>
+								<li><a href="/category-tag.html">改質リグニン</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">木造都市／第2の森林<span>Secondary Forest</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">木造9F建て</a></li>
+								<li><a href="/category-tag.html">木造建築学・解体学</a></li>
+								<li><a href="/category-tag.html">木材産業</a></li>
+								<li><a href="/category-tag.html">建築規制と法律</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">林業の革新<span>Innovation</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">流通と輸送の革新</a></li>
+								<li><a href="/category-tag.html">森林サービス産業／推進地域</a></li>
+								<li><a href="/category-tag.html">森林・林業関連基本法とその改訂</a></li>
+								<li><a href="/category-tag.html">災害からの復興と森林</a></li>
+								<li><a href="/category-tag.html">新しい働き方</a></li>
+								<li><a href="/category-tag.html">森林管理の専門家（フォレスター）</a></li>
+								<li><a href="/category-tag.html">林業DX（AI／ITの活用）</a></li>
+								<li><a href="/category-tag.html">経済安全保障</a></li>
+								<li><a href="/category-tag.html">Jクレジット</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">地域創生と森林<span>Local Revitalization</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
+								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
+								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">森林文化の熟成<span>Culture</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">里山資本主義</a></li>
+								<li><a href="/category-tag.html">循環型社会</a></li>
+								<li><a href="/category-tag.html">森と芸術、メディア</a></li>
+								<li><a href="/category-tag.html">観光、山を愛する人たち</a></li>
+							</ul>
+						</div>
+						<div class="more--child">
+							<div class="more--midahshi">
+								<a href="/category-tag.html">接続する社会的共通資本<span>Circulation &amp; Connectivity</span></a>
+							</div>
+							<ul>
+								<li><a href="/category-tag.html">大気、河川、地形</a></li>
+								<li><a href="/category-tag.html">水と土壌</a></li>
+								<li><a href="/category-tag.html">道（道路・林道・鉄道）</a></li>
+								<li><a href="/category-tag.html">菌類および生物多様性</a></li>
+								<li><a href="/category-tag.html">時間</a></li>
+							</ul>
+						</div>
+						<div class="more--child pc-none">
+							<div class="more--midahshi">
+								<a href="/page-contributors.html">執筆者一覧<span>Contributors</span></a>
+							</div>
+						</div>
+						<div class="more--child pc-none">
+							<div class="more--midahshi">
+								<a href="/page-newsletter.html">メルマガ登録<span>Newsletter</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Contents -->
+		<div class="container">
+			<div class="archive--title">
+				<h1>再生可能エネルギー<span>Green Energy</span></h1>
+			</div>
+			<!-- Masonry Layout -->
+			<div id="macy--wrap">
+				<div class="macy--content">
+					<div class="date">1.31<span>Sun 2025</span></div>
+					<h2>世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理</h2>
+					<p>カナダは世界の森林総面積の9%にあたる3億6700万haの森林を有し、ロシアとブラジルに次ぐ世界第3の森林国です。その豊かな森林の93%は公有林で、都市の形成や農地への転用を経てもなお元来の林地の大部分が維持されており、年間伐採面積は0.2%※に留まるため、カナダの森が失われることはありません。実際、通年では伐採よりも虫害や病害、火災で失われる木々の方が多いのが現状です。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">再生可能エネルギー</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.30<span>Mon 2025</span></div>
+					<h2>純木造3階建て 東京農業大学 学生寮で「木」の効果検証</h2>
+					<p>住友林業株式会社（本社：東京都千代田区、社長：光吉 敏郎）が設計・施工した学校法人東京農業大学（東京都世田谷区、理事長：江口　文陽）世田谷キャンパスの学生寮「青雲寮(せいうんりょう)」が竣工し、25日に同大が落成式を開きました。純木造3階建てで、国産材や同大が所有する奥多摩演習林の木材を活用しています。東京農業大学 農友会 陸上競技部の学生が3月に入寮予定です。住友林業は木造建築が心身の健康や競技パフォーマンスに与える効果を立証するため、入寮後に同大の協力を得て純木造の「青雲寮」で検証します。検証結果は快適な空間づくりと木造建築の価値向上につなげます。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">接続する社会的共通資本</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.29<span>Sun 2025</span></div>
+					<h2>2025年日本国際博覧会（大阪・関西万博） 「大屋根リング記念式典」を開催</h2>
+					<p>公益社団法人2025年日本国際博覧会協会は、2025年日本国際博覧会（大阪・関西万博）会場のシンボルで、世界最大級の木造建築物となる「大屋根リング」の木造建築部分１周約2㎞が、2024年8月21日（水）にひとつにつながったことを記念し、2024年9月13日（金）に大屋根リングのスカイウォークにて、「大屋根リング記念式典」を行いました。式典には、当協会理事や藤本壮介会場デザインプロデューサーのほか、大阪・関西万博会場工区JV（共同企業体）代表者が出席しました。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">森林文化の熟成</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.28<span>Mon 2025</span></div>
+					<h2>世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理</h2>
+					<p>カナダは世界の森林総面積の9%にあたる3億6700万haの森林を有し、ロシアとブラジルに次ぐ世界第3の森林国です。その豊かな森林の93%は公有林で、都市の形成や農地への転用を経てもなお元来の林地の大部分が維持されており、年間伐採面積は0.2%※に留まるため、カナダの森が失われることはありません。実際、通年では伐採よりも虫害や病害、火災で失われる木々の方が多いのが現状です。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">再生可能エネルギー</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.27<span>Sun 2025</span></div>
+					<h2>純木造3階建て 東京農業大学 学生寮で「木」の効果検証</h2>
+					<p>住友林業株式会社（本社：東京都千代田区、社長：光吉 敏郎）が設計・施工した学校法人東京農業大学（東京都世田谷区、理事長：江口　文陽）世田谷キャンパスの学生寮「青雲寮(せいうんりょう)」が竣工し、25日に同大が落成式を開きました。純木造3階建てで、国産材や同大が所有する奥多摩演習林の木材を活用しています。東京農業大学 農友会 陸上競技部の学生が3月に入寮予定です。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">林業の革新</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.26<span>Sun 2025</span></div>
+					<h2>2025年日本国際博覧会（大阪・関西万博） 「大屋根リング記念式典」を開催</h2>
+					<p>公益社団法人2025年日本国際博覧会協会は、2025年日本国際博覧会（大阪・関西万博）会場のシンボルで、世界最大級の木造建築物となる「大屋根リング」の木造建築部分１周約2㎞が、2024年8月21日（水）にひとつにつながったことを記念し、2024年9月13日（金）に大屋根リングのスカイウォークにて、「大屋根リング記念式典」を行いました。式典には、当協会理事や藤本壮介会場デザインプロデューサーのほか、大阪・関西万博会場工区JV（共同企業体）代表者が出席しました。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">地域創生と森林</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.25<span>Mon 2025</span></div>
+					<h2>世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理</h2>
+					<p>カナダは世界の森林総面積の9%にあたる3億6700万haの森林を有し、ロシアとブラジルに次ぐ世界第3の森林国です。その豊かな森林の93%は公有林で、都市の形成や農地への転用を経てもなお元来の林地の大部分が維持されており、年間伐採面積は0.2%※に留まるため、カナダの森が失われることはありません。実際、通年では伐採よりも虫害や病害、火災で失われる木々の方が多いのが現状です。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">木造都市／第2の森林</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.24<span>Mon 2025</span></div>
+					<h2>純木造3階建て 東京農業大学 学生寮で「木」の効果検証</h2>
+					<p>住友林業株式会社（本社：東京都千代田区、社長：光吉 敏郎）が設計・施工した学校法人東京農業大学（東京都世田谷区、理事長：江口　文陽）世田谷キャンパスの学生寮「青雲寮(せいうんりょう)」が竣工し、25日に同大が落成式を開きました。純木造3階建てで、国産材や同大が所有する奥多摩演習林の木材を活用しています。東京農業大学 農友会 陸上競技部の学生が3月に入寮予定です。住友林業は木造建築が心身の健康や競技パフォーマンスに与える効果を立証するため、入寮後に同大の協力を得て純木造の「青雲寮」で検証します。検証結果は快適な空間づくりと木造建築の価値向上につなげます。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">林業の革新</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.23<span>Sun 2025</span></div>
+					<h2>2025年日本国際博覧会（大阪・関西万博） 「大屋根リング記念式典」を開催</h2>
+					<p>公益社団法人2025年日本国際博覧会協会は、2025年日本国際博覧会（大阪・関西万博）会場のシンボルで、世界最大級の木造建築物となる「大屋根リング」の木造建築部分１周約2㎞が、2024年8月21日（水）にひとつにつながったことを記念し、2024年9月13日（金）に大屋根リングのスカイウォークにて、「大屋根リング記念式典」を行いました。式典には、当協会理事や藤本壮介会場デザインプロデューサーのほか、大阪・関西万博会場工区JV（共同企業体）代表者が出席しました。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">再生可能エネルギー</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.22<span>Mon 2025</span></div>
+					<h2>世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理</h2>
+					<p>カナダは世界の森林総面積の9%にあたる3億6700万haの森林を有し、ロシアとブラジルに次ぐ世界第3の森林国です。その豊かな森林の93%は公有林で、都市の形成や農地への転用を経てもなお元来の林地の大部分が維持されており、年間伐採面積は0.2%※に留まるため、カナダの森が失われることはありません。実際、通年では伐採よりも虫害や病害、火災で失われる木々の方が多いのが現状です。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">森林文化の熟成</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.21<span>Mon 2025</span></div>
+					<h2>純木造3階建て 東京農業大学 学生寮で「木」の効果検証</h2>
+					<p>住友林業株式会社（本社：東京都千代田区、社長：光吉 敏郎）が設計・施工した学校法人東京農業大学（東京都世田谷区、理事長：江口　文陽）世田谷キャンパスの学生寮「青雲寮(せいうんりょう)」が竣工し、25日に同大が落成式を開きました。純木造3階建てで、国産材や同大が所有する奥多摩演習林の木材を活用しています。東京農業大学 農友会 陸上競技部の学生が3月に入寮予定です。住友林業は木造建築が心身の健康や競技パフォーマンスに与える効果を立証するため、入寮後に同大の協力を得て純木造の「青雲寮」で検証します。検証結果は快適な空間づくりと木造建築の価値向上につなげます。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">接続する社会的共通資本</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.20<span>Sun 2025</span></div>
+					<h2>2025年日本国際博覧会（大阪・関西万博） 「大屋根リング記念式典」を開催</h2>
+					<p>公益社団法人2025年日本国際博覧会協会は、2025年日本国際博覧会（大阪・関西万博）会場のシンボルで、世界最大級の木造建築物となる「大屋根リング」の木造建築部分１周約2㎞が、2024年8月21日（水）にひとつにつながったことを記念し、2024年9月13日（金）に大屋根リングのスカイウォークにて、「大屋根リング記念式典」を行いました。式典には、当協会理事や藤本壮介会場デザインプロデューサーのほか、大阪・関西万博会場工区JV（共同企業体）代表者が出席しました。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">木造都市／第2の森林</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.19<span>Mon 2025</span></div>
+					<h2>世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理</h2>
+					<p>カナダは世界の森林総面積の9%にあたる3億6700万haの森林を有し、ロシアとブラジルに次ぐ世界第3の森林国です。その豊かな森林の93%は公有林で、都市の形成や農地への転用を経てもなお元来の林地の大部分が維持されており、年間伐採面積は0.2%※に留まるため、カナダの森が失われることはありません。実際、通年では伐採よりも虫害や病害、火災で失われる木々の方が多いのが現状です。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">再生可能エネルギー</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.18<span>Mon 2025</span></div>
+					<h2>純木造3階建て 東京農業大学 学生寮で「木」の効果検証</h2>
+					<p>住友林業株式会社（本社：東京都千代田区、社長：光吉 敏郎）が設計・施工した学校法人東京農業大学（東京都世田谷区、理事長：江口　文陽）世田谷キャンパスの学生寮「青雲寮(せいうんりょう)」が竣工し、25日に同大が落成式を開きました。純木造3階建てで、国産材や同大が所有する奥多摩演習林の木材を活用しています。東京農業大学 農友会 陸上競技部の学生が3月に入寮予定です。住友林業は木造建築が心身の健康や競技パフォーマンスに与える効果を立証するため、入寮後に同大の協力を得て純木造の「青雲寮」で検証します。検証結果は快適な空間づくりと木造建築の価値向上につなげます。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">森林文化の熟成</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.17<span>Sun 2025</span></div>
+					<h2>2025年日本国際博覧会（大阪・関西万博） 「大屋根リング記念式典」を開催</h2>
+					<p>公益社団法人2025年日本国際博覧会協会は、2025年日本国際博覧会（大阪・関西万博）会場のシンボルで、世界最大級の木造建築物となる「大屋根リング」の木造建築部分１周約2㎞が、2024年8月21日（水）にひとつにつながったことを記念し、2024年9月13日（金）に大屋根リングのスカイウォークにて、「大屋根リング記念式典」を行いました。式典には、当協会理事や藤本壮介会場デザインプロデューサーのほか、大阪・関西万博会場工区JV（共同企業体）代表者が出席しました。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">地域創生と森林</a></li>
+					</ul>
+				</div>
+				<div class="macy--content">
+					<div class="date">1.16<span>Sun 2025</span></div>
+					<h2>世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理</h2>
+					<p>カナダは世界の森林総面積の9%にあたる3億6700万haの森林を有し、ロシアとブラジルに次ぐ世界第3の森林国です。その豊かな森林の93%は公有林で、都市の形成や農地への転用を経てもなお元来の林地の大部分が維持されており、年間伐採面積は0.2%※に留まるため、カナダの森が失われることはありません。実際、通年では伐採よりも虫害や病害、火災で失われる木々の方が多いのが現状です。</p>
+					<a href="/single.html"></a>
+					<ul>
+						<li><a href="/category-tag.html">木造都市／第2の森林</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Pagenation
+			============================================= -->
+			<nav class="pagination" role="navigation">
+				<ul class="page-numbers">
+					<li>
+						<a class="prev page-numbers" href="#">&lt;</a>
+					</li>
+					<li><a class="page-numbers" href="#">1</a></li>
+					<li><span aria-current="page" class="page-numbers current">2</span></li>
+					<li><a class="page-numbers" href="#">3</a></li>
+					<li><span class="page-numbers dots">…</span></li>
+					<li><a class="page-numbers" href="#">6</a></li>
+					<li>
+						<a class="next page-numbers" href="#">&gt;</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Footer -->
+		<footer>
+			<div class="foot--wrap">
+				<div class="foot--menu">
+					<div class="logo">
+						<a href="/"><img src="/asset/images/logo.svg" alt="森林循環経済 FOREST CIRCULARITY" width="373" height="33" /></a>
+					</div>
+					<ul>
+						<li>
+							<a target="_blank" href="https://www.facebook.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m22.27 20.08.74-4.86h-4.66v-3.15c0-1.33.65-2.63 2.74-2.63h2.12v-4.14s-1.92-.33-3.76-.33c-3.84 0-6.35 2.33-6.35 6.54v3.7h-4.27v4.86h4.27v11.74c.86.13 1.73.2 2.63.2s1.77-.07 2.63-.2v-11.74h3.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://x.com/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m17.64 14.68 6.43-7.32h-1.52l-5.58 6.35-4.46-6.35h-5.14l6.74 9.61-6.74 7.67h1.52l5.89-6.71 4.71 6.71h5.14m-15.19-16.15h2.34l10.77 15.08h-2.34" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="/feed/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<g fill="#fff">
+										<path d="m10.28 24.11c-1.2 0-2.17-.97-2.17-2.17s.97-2.16 2.17-2.16 2.17.97 2.17 2.16-.97 2.17-2.17 2.17z" />
+										<path d="m15.46 24.11c-.04-4.03-3.31-7.3-7.35-7.34v-3.21c5.81.04 10.52 4.74 10.56 10.55z" />
+										<path d="m20.9 24.11c-.02-7.06-5.74-12.76-12.79-12.79v-3.21c8.83.03 15.98 7.18 16 16z" />
+									</g>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="/contact/">
+								<svg viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="16" />
+									<path d="m25.5 11.13c0 .56-.17 1.09-.52 1.6s-.78.94-1.29 1.3c-2.66 1.84-4.31 2.99-4.96 3.45-.07.05-.22.16-.45.32-.23.17-.42.3-.57.4s-.34.22-.55.34c-.22.13-.42.22-.61.29-.19.06-.37.1-.53.1h-.02c-.16 0-.34-.03-.53-.1-.19-.06-.39-.16-.61-.29s-.4-.24-.55-.34-.34-.24-.57-.4c-.23-.17-.38-.27-.45-.32-.64-.45-1.57-1.1-2.78-1.94s-1.93-1.34-2.17-1.51c-.44-.3-.85-.71-1.24-1.22s-.58-1-.58-1.45c0-.55.15-1.01.44-1.38s.71-.55 1.26-.55h15.61c.46 0 .86.17 1.19.5.34.33.5.73.5 1.2zm0 3.12v8.42c0 .47-.17.87-.5 1.2s-.73.5-1.2.5h-15.61c-.47 0-.87-.17-1.2-.5s-.5-.73-.5-1.2v-8.42c.31.35.67.65 1.07.92 2.56 1.74 4.32 2.96 5.27 3.66.4.3.73.53.98.69.25.17.58.34 1 .51s.81.26 1.17.26h.02c.36 0 .75-.09 1.17-.26s.75-.34 1-.51.58-.4.98-.69c1.2-.87 2.96-2.09 5.28-3.66.4-.28.76-.58 1.06-.92z" fill="#fff" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="foot--nav">
+					<ul>
+						<li><a href="/page.html">「森林循環経済」概要</a></li>
+						<li><a href="/page.html">協賛（協力）企業一覧</a></li>
+						<li><a href="/page.html">著作権について</a></li>
+						<li><a href="/page.html">外部配信について</a></li>
+						<li><a href="/page.html">個人情報保護について</a></li>
+						<li><a href="/page.html">運営会社（法人） および編集部について</a></li>
+					</ul>
+				</div>
+				<div class="foot--bottom">
+					<div class="copyright">&#169; 2025 forestcircularity All rights reserved.</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Go page top
+				============================================= -->
+		<div id="page_top">
+			<a href="#">
+				<svg viewBox="0 0 60.25 50.88">
+					<g fill="#fff">
+						<path d="m56.71 50.88-26.59-26.59-26.58 26.59-3.54-3.53 30.12-30.13 30.13 30.13z" />
+						<path d="m.66 0h58.92v5.1h-58.92z" />
+					</g>
+				</svg>
+			</a>
+		</div>
+		<script src="/asset/js/function.min.js"></script>
+		
+		<script src="/asset/js/macy.min.js"></script>
+		<script>
+			var masonry = new Macy({
+				container: "#macy--wrap",
+				trueOrder: true,
+				waitForImages: false,
+				useOwnImageLoader: false,
+				refresh: true,
+				markAsCompleted: true,
+				mobileFirst: true,
+				columns: 1,
+				margin: {
+					y: 20,
+					x: 20,
+				},
+				breakAt: {
+					1280: 4,
+					992: 3,
+					640: 2,
+					375: 1,
+				},
+			});
+		</script>
+	</body>
+</html>
