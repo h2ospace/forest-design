@@ -1,2 +1,4 @@
 *.kit
 config.codekit3
+
+.vscode/*
