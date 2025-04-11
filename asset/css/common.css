@@ -396,6 +396,7 @@ header {
 .header--wrap {
 	width: 100%;
 	height: 130px;
+	background: url(/asset/images/logo-fc.svg) no-repeat calc(50% + 195px) bottom;
 	border-bottom: var(--color-xlightgray) solid 1px;
 	display: flex;
 	flex-wrap: wrap;
@@ -405,7 +406,7 @@ header {
 	z-index: 100;
 }
 .header--right {
-	width: calc(calc(100% - clamp(10rem, 4.286rem + 14.286vw, 15rem)) / 2);
+	width: calc(calc(100% - 240px) / 2);
 }
 .header--right ul {
 	display: flex;
@@ -465,10 +466,10 @@ header {
 	transition: var(--transition);
 }
 .header--logo {
-	width: clamp(10rem, 4.286rem + 14.286vw, 15rem);
+	width: 240px;
 }
 .header--left {
-	width: calc(calc(100% - clamp(10rem, 4.286rem + 14.286vw, 15rem)) / 2);
+	width: calc(calc(100% - 240px) / 2);
 	text-align: left;
 	height: 50px;
 	position: relative;
@@ -575,10 +576,13 @@ header {
 	.header--wrap {
 		justify-content: inherit;
 		height: 60px;
+		background: url(/asset/images/logo-fc.svg) no-repeat 170px bottom;
+		background-size: 110px;
 		padding: 0 1.5rem;
 	}
 	.header--logo {
 		order: 1;
+		width: 160px;
 	}
 	.header--left {
 		width: 0;
@@ -871,6 +875,9 @@ header {
 	}
 	.more--midahshi {
 		font-size: 0.938rem;
+	}
+	.more--menu .spacer {
+		display: none;
 	}
 }
 @media (max-width: 767px) {
