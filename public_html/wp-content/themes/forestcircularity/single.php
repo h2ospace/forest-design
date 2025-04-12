@@ -1,11 +1,36 @@
 <?php get_header(); ?>
 <?php while (have_posts()): the_post(); ?>
+		<?php
+		// 番号を取得
+		$post_slug = $post->post_name;
+		$number = str_replace('num-', '', $post_slug);
+
+		// 月を英語に変換する配列
+		$months_ja_en = array(
+			'1月' => 'January',
+			'2月' => 'February',
+			'3月' => 'March',
+			'4月' => 'April',
+			'5月' => 'May',
+			'6月' => 'June',
+			'7月' => 'July',
+			'8月' => 'August',
+			'9月' => 'September',
+			'10月' => 'October', 
+			'11月' => 'November',
+			'12月' => 'December'
+		);
+
+		// 日本語の月を英語に変換
+		$month_ja = get_the_date('n月');
+		$date = $months_ja_en[$month_ja] . ' ' . get_the_date('d, Y');
+		?>
 
 		<!-- Contents -->
 		<div class="container--second">
-			<h1 class="single"><?php the_title(); ?><span>001</span></h1>
-			<p class="midashi--en">Canada's management by strictest forest regulations</p>
-			<p class="update--en">Updated by Masayo Yaso on March 15, 2025, 12:43 pm JST</p>
+			<h1 class="single"><?php the_title(); ?><span><?php echo sprintf('%03s', $number); ?></span></h1>
+			<p class="midashi--en"><?php the_field('english_title'); ?></p>
+			<p class="update--en">Updated by <?php echo get_the_author(); ?> on <?php echo $date; ?>, <?php echo get_the_time(); ?> JST</p>
 			<!-- Contributer -->
 			<div class="contributor--wrap">
 				<p class="contributor--name"><a href="author.html">八十雅世</a></p>
