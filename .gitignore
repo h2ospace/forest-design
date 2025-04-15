@@ -3,3 +3,53 @@ config.codekit3
 
 .vscode/*
 .idea/*
+
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/public_html/wp-admin/
+/public_html/wp-content/index.php
+/public_html/wp-content/languages
+/public_html/wp-content/plugins/index.php
+/public_html/wp-content/themes/index.php
+/public_html/wp-includes/
+/public_html/index.php
+/public_html/license.txt
+/public_html/readme.html
+/public_html/wp-*.php
+/public_html/xmlrpc.php
+
+# Configuration
+public_html/wp-config.php
+
+# Example themes
+/public_html/wp-content/themes/twenty*/
+
+# Example plugin
+/public_html/wp-content/plugins/hello.php
+
+# Uploads
+/public_html/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/public_html/.htaccess
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+/public_html/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+/public_html/wp-content/themes
+!/public_html/wp-content/themes/forestcircularity
