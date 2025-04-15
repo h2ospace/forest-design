@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
-        
+
         <?php wp_head(); ?>
 	</head>
 	<body>
@@ -33,11 +33,11 @@
 					<ul>
 						<li>
 							執筆者一覧<span>Contributors</span>
-							<a href="/page-contributors.html"></a>
+							<a href="/contributors"></a>
 						</li>
 						<li>
 							メルマガ登録<span>Newsletter</span>
-							<a href="/page-newsletter.html"></a>
+							<a href="/mailmagazine"></a>
 						</li>
 						<li class="icon-fb">
 							<a target="_blank" href="https://www.facebook.com/">
@@ -211,4 +211,3 @@
 				<div class="spacer"></div>
 			</div>
 		</header>
-		

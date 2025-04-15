@@ -44,14 +44,12 @@
 						</li>
 					</ul>
 				</div>
+                <?php $footernav = get_field('footer_nav', 'option'); ?>
 				<div class="foot--nav">
 					<ul>
-						<li><a href="/page.html">「森林循環経済」概要</a></li>
-						<li><a href="/page.html">協賛（協力）企業一覧</a></li>
-						<li><a href="/page.html">著作権について</a></li>
-						<li><a href="/page.html">外部配信について</a></li>
-						<li><a href="/page.html">個人情報保護について</a></li>
-						<li><a href="/page.html">運営会社（法人） および編集部について</a></li>
+                        <?php foreach ($footernav as $item): ?>
+                            <li><a href="<?php echo esc_url($item['url']); ?>"><?php echo esc_html($item['label']); ?></a></li>
+                        <?php endforeach; ?>
 					</ul>
 				</div>
 				<div class="foot--bottom">
@@ -72,7 +70,7 @@
 			</a>
 		</div>
 		<script src="/asset/js/function.min.js"></script>
-		
+
 		<script src="/asset/js/macy.min.js"></script>
 		<script>
 			var masonry = new Macy({

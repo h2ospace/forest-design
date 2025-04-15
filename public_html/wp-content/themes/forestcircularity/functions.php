@@ -37,8 +37,8 @@ add_action('init', 'change_post_tag_to_checkbox', 1);
  */
 // スラッグ名が日本語だったら自動的にnum＋id付与へ変更（スラッグを設定した場合は適用しない）
 function auto_post_slug( $slug, $post_ID, $post_status ) {
-    // slugが num- で始まる場合は何もしない
-    if ( strpos( $slug, 'num-' ) === 0 ) {
+    // 投稿以外, 公開されている投稿以外、slugが num- で始まる場合は何もしない
+    if ( $post_status !== 'publish' || get_post_type( $post_ID ) !== 'post' || strpos( $slug, 'num-' ) === 0 ) {
         return $slug;
     } else {
         // 投稿の数を取得

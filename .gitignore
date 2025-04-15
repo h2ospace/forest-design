@@ -2,3 +2,4 @@
 config.codekit3
 
 .vscode/*
+.idea/*
