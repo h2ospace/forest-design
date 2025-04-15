@@ -21,23 +21,23 @@
 		<header class="js-header">
 			<div class="header--wrap">
 				<div class="header--left">
-					<form action="search.html">
-						<input type="text" name="s" placeholder="サイト内検索" />
+					<form action="" method="get">
+						<input type="text" name="s" placeholder="サイト内検索" value="<?php echo (get_search_query() ? get_search_query() : ''); ?>" />
 						<button type="submit"><img src="/asset/images/icon-search.svg" alt="" width="20" height="20" /></button>
 					</form>
 				</div>
 				<div class="header--logo">
-					<a href="/"><img src="/asset/images/logo.svg?0403" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
+					<a href="<?php echo home_url(); ?>"><img src="/asset/images/logo.svg?0403" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
 				</div>
 				<div class="header--right">
 					<ul>
 						<li>
 							執筆者一覧<span>Contributors</span>
-							<a href="/contributors"></a>
+							<a href="<?php echo home_url('/contributors'); ?>"></a>
 						</li>
 						<li>
 							メルマガ登録<span>Newsletter</span>
-							<a href="/mailmagazine"></a>
+							<a href="<?php echo home_url('/mailmagazine'); ?>"></a>
 						</li>
 						<li class="icon-fb">
 							<a target="_blank" href="https://www.facebook.com/">
@@ -78,32 +78,22 @@
 					</ul>
 				</div>
 			</div>
+			<?php
+			# カテゴリーの取得
+			$categories = get_categories([
+				'orderby' => 'menu_order',
+				'order' => 'ASC',
+				'hide_empty' => false,
+			]);
+			?>
 			<div class="header--nav">
 				<ul>
+					<?php foreach ($categories as $category) : ?>
 					<li>
-						バイオマス化学<span>Biomass Chemistry</span>
-						<a href="/category-tag.html"></a>
+						<?php echo esc_html($category->name); ?><span><?php echo esc_html(get_field('english_title', 'category_' . $category->term_id)); ?></span>
+						<a href="<?php echo esc_url(get_category_link($category->term_id)); ?>"></a>
 					</li>
-					<li>
-						木造都市／第2の森林<span>Secondary Forest</span>
-						<a href="/category-tag.html"></a>
-					</li>
-					<li>
-						林業の革新<span>Innovation</span>
-						<a href="/category-tag.html"></a>
-					</li>
-					<li>
-						地域創生と森林<span>Local Revitalization</span>
-						<a href="/category-tag.html"></a>
-					</li>
-					<li>
-						森林文化の熟成<span>Culture</span>
-						<a href="/category-tag.html"></a>
-					</li>
-					<li>
-						接続する社会的共通資本<span>Circulation &amp; Connectivity</span>
-						<a href="/category-tag.html"></a>
-					</li>
+					<?php endforeach; ?>
 				</ul>
 			</div>
 			<!-- SP Menu -->
@@ -112,7 +102,7 @@
 				<img class="off" src="/asset/images/icon-close.svg" alt="" width="20" height="20" />
 			</div>
 			<div id="search--wrap" class="panelactive">
-				<form role="search" id="searchform" action="/search.html">
+				<form role="search" id="searchform" action="/" method="get">
 					<input type="text" name="s" id="search--text" placeholder="サイト内検索" />
 					<button type="submit"><img src="/asset/images/icon-search.svg" alt="" width="20" height="20" /></button>
 				</form>
@@ -198,12 +188,12 @@
 						</div>
 						<div class="more--child pc-none">
 							<div class="more--midahshi">
-								<a href="/page-contributors.html">執筆者一覧<span>Contributors</span></a>
+								<a href="<?php echo home_url('/contributors'); ?>">執筆者一覧<span>Contributors</span></a>
 							</div>
 						</div>
 						<div class="more--child pc-none">
 							<div class="more--midahshi">
-								<a href="/page-newsletter.html">メルマガ登録<span>Newsletter</span></a>
+								<a href="<?php echo home_url('/mailmagazine'); ?>">メルマガ登録<span>Newsletter</span></a>
 							</div>
 						</div>
 					</div>
