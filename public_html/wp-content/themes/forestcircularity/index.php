@@ -1,11 +1,3 @@
-<?php
-// todo 個別ページの著者情報(Apr 22)
-// todo タグ一覧(Apr 22)
-// todo カテゴリ一覧(Apr 22)
-// todo グローバルナビ(Apr 22)
-// todo 執筆者一覧(Apr 22)
-// todo サイト内検索(Apr 22)
-?>
 <?php get_header(); ?>
 
 		<!-- Contents -->
