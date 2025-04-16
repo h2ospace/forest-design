@@ -479,6 +479,10 @@
 					375: 1,
 				},
 			});
+			// ウィンドウサイズ変更時に高さを再計算
+			window.addEventListener("resize", function () {
+				masonry.recalculate(true);
+			});
 		</script>
 	</body>
 </html>
