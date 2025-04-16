@@ -12,7 +12,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
 		<link href="https://www.localknowledge.jp/wp-includes/css/dist/block-library/style.min.css" rel="stylesheet" /><!--標準ブロックエディタのcss　wordpress投入時は削除-->
-		<link href="/asset/css/common.min.css?0403rev3" rel="stylesheet" />
+		<link href="/asset/css/common.min.css?0410" rel="stylesheet" />
 		<title>森林循環経済 | Forest Circularity</title>
 		
 	</head>
@@ -56,14 +56,10 @@
 							</a>
 						</li>
 						<li class="icon-rss">
-							<a target="_blank" href="/feed/">
+							<a target="_blank" href="https://www.youtube.com/@TV-zp6dk">
 								<svg viewBox="0 0 32 32">
 									<circle cx="16" cy="16" r="16" />
-									<g fill="#fff">
-										<path d="m10.28 24.11c-1.2 0-2.17-.97-2.17-2.17s.97-2.16 2.17-2.16 2.17.97 2.17 2.16-.97 2.17-2.17 2.17z" />
-										<path d="m15.46 24.11c-.04-4.03-3.31-7.3-7.35-7.34v-3.21c5.81.04 10.52 4.74 10.56 10.55z" />
-										<path d="m20.9 24.11c-.02-7.06-5.74-12.76-12.79-12.79v-3.21c8.83.03 15.98 7.18 16 16z" />
-									</g>
+									<path d="m25.1 11.3c-.2-1-1-1.7-2-1.9-1.5-.3-4.2-.5-7.2-.5s-5.8.2-7.2.5c-1 .2-1.8.9-2 1.9-.2 1.1-.4 2.7-.4 4.7s.2 3.6.4 4.7c.2 1 1 1.7 2 1.9 1.6.3 4.3.5 7.2.5s5.7-.2 7.2-.5c1-.2 1.8-.9 2-1.9.2-1.1.4-2.7.4-4.7s-.3-3.6-.5-4.7zm-11.6 7.8v-6.3l5.5 3.1-5.5 3.1z" fill="#fff" />
 								</svg>
 							</a>
 						</li>
@@ -361,7 +357,16 @@
 					</ul>
 				</div>
 			</div>
-			<!-- Pagenation
+			<!-- Pagenation WP-pagenaviの場合
+			============================================= -->
+			<div class="wp-pagenavi" role="navigation">
+				<a class="previouspostslink" rel="prev" aria-label="前のページ" href="https://forestcircularity.jp/">&lt;</a>
+				<a class="page smaller" title="ページ 1" href="https://forestcircularity.jp/">1</a>
+				<span aria-current="page" class="current">2</span>
+				<a class="page larger" title="ページ 3" href="https://forestcircularity.jp/page/3/">3</a>
+				<a class="nextpostslink" rel="next" aria-label="次のページ" href="https://forestcircularity.jp/page/3/">&gt;</a>
+			</div>
+			<!-- Pagenation the_posts_paginationの場合
 			============================================= -->
 			<nav class="pagination" role="navigation">
 				<ul class="page-numbers">
