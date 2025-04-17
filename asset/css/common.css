@@ -1040,6 +1040,60 @@ a.page-numbers,
 	}
 }
 /* ----------------------------------------------------------------
+	Pagenation WP-pagenavi用
+-----------------------------------------------------------------*/
+.wp-pagenavi {
+	text-align: center;
+	margin: 40px 0;
+	display: inline-block;
+	width: 100%;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.wp-pagenavi a {
+	width: 40px;
+	height: 40px;
+	color: var(--color-black);
+	font-size: clamp(0.938rem, 0.91rem + 0.12vw, 1rem);
+	font-weight: 400;
+	line-height: 1.8;
+	padding: 4px 11px;
+	display: inherit;
+	margin: 0 4px 10px;
+	text-decoration: none !important;
+	border: var(--color-xlightgray) solid 1px;
+}
+.wp-pagenavi span {
+	width: 40px;
+	height: 40px;
+	background-color: var(--color-black) !important;
+	border: var(--color-black) solid 1px;
+	color: var(--color-white);
+	font-size: clamp(0.938rem, 0.91rem + 0.12vw, 1rem);
+	font-weight: 400;
+	line-height: 1.8;
+	padding: 4px 11px;
+	display: inherit;
+	margin: 0 4px 10px;
+	text-decoration: none !important;
+}
+.wp-pagenavi a:hover {
+	background-color: var(--color-black);
+	border: var(--color-black) solid 1px;
+	transition: 0.5s;
+	color: var(--color-white);
+}
+@media (max-width: 600px) {
+	.wp-pagenavi a,
+	.wp-pagenavi .current {
+		width: 35px;
+		height: 35px;
+		padding: 3px 11px;
+	}
+}
+/* ----------------------------------------------------------------
 	Archive Title area Category
 -----------------------------------------------------------------*/
 .archive--title {
