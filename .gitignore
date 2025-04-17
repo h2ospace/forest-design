@@ -52,4 +52,4 @@ public_html/wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 /public_html/wp-content/themes
-!/public_html/wp-content/themes/forestcircularity
+!/public_html/wp-content/themes/forestcircularity/*

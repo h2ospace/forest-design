@@ -1,3 +1,24 @@
+<?php
+# カテゴリーの取得
+$categories = get_categories([
+	'orderby' => 'menu_order',
+	'order' => 'ASC',
+	'hide_empty' => false,
+]);
+
+# タグの取得
+$tags = get_tags([
+	'orderby' => 'menu_order',
+	'order' => 'ASC',
+	'hide_empty' => false,
+]);
+## カテゴリーごとに振り分け
+$tags_by_category = [];
+foreach ($tags as $tag) {
+	$tags_by_category[get_field('parent_category', $tag)][] = $tag;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
@@ -116,86 +137,18 @@
 			<div class="more--menu">
 				<div class="more--wrap-base">
 					<div class="more--wrap">
+						<?php foreach ($categories as $category) : ?>
 						<div class="more--child">
 							<div class="more--midahshi">
-								<a href="/category-tag.html">バイオマス化学<span>Biomass Chemistry</span></a>
+								<a href="<?php echo esc_url(get_category_link($category->term_id)); ?>"><?php echo esc_html($category->name); ?><span><?php echo esc_html(get_field('english_title', 'category_' . $category->term_id)); ?></span></a>
 							</div>
 							<ul>
-								<li><a href="/category-tag.html">炭素循環と炭素固定</a></li>
-								<li><a href="/category-tag.html">木質バイオマス</a></li>
-								<li><a href="/category-tag.html">改質リグニン</a></li>
+								<?php foreach ($tags_by_category[$category->term_id] as $tag) : ?>
+								<li><a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>"><?php echo esc_html($tag->name); ?></a></li>
+								<?php endforeach; ?>
 							</ul>
 						</div>
-						<div class="more--child">
-							<div class="more--midahshi">
-								<a href="/category-tag.html">木造都市／第2の森林<span>Secondary Forest</span></a>
-							</div>
-							<ul>
-								<li><a href="/category-tag.html">木造9F建て</a></li>
-								<li><a href="/category-tag.html">木造建築学・解体学</a></li>
-								<li><a href="/category-tag.html">木材産業</a></li>
-								<li><a href="/category-tag.html">建築規制と法律</a></li>
-							</ul>
-						</div>
-						<div class="more--child">
-							<div class="more--midahshi">
-								<a href="/category-tag.html">林業の革新<span>Innovation</span></a>
-							</div>
-							<ul>
-								<li><a href="/category-tag.html">流通と輸送の革新</a></li>
-								<li><a href="/category-tag.html">森林サービス産業／推進地域</a></li>
-								<li><a href="/category-tag.html">森林・林業関連基本法とその改訂</a></li>
-								<li><a href="/category-tag.html">災害からの復興と森林</a></li>
-								<li><a href="/category-tag.html">新しい働き方</a></li>
-								<li><a href="/category-tag.html">森林管理の専門家（フォレスター）</a></li>
-								<li><a href="/category-tag.html">林業DX（AI／ITの活用）</a></li>
-								<li><a href="/category-tag.html">経済安全保障</a></li>
-								<li><a href="/category-tag.html">Jクレジット</a></li>
-							</ul>
-						</div>
-						<div class="more--child">
-							<div class="more--midahshi">
-								<a href="/category-tag.html">地域創生と森林<span>Local Revitalization</span></a>
-							</div>
-							<ul>
-								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
-								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
-								<li><a href="/category-tag.html">都道府県別のアクティビティ</a></li>
-							</ul>
-						</div>
-						<div class="more--child">
-							<div class="more--midahshi">
-								<a href="/category-tag.html">森林文化の熟成<span>Culture</span></a>
-							</div>
-							<ul>
-								<li><a href="/category-tag.html">里山資本主義</a></li>
-								<li><a href="/category-tag.html">循環型社会</a></li>
-								<li><a href="/category-tag.html">森と芸術、メディア</a></li>
-								<li><a href="/category-tag.html">観光、山を愛する人たち</a></li>
-							</ul>
-						</div>
-						<div class="more--child">
-							<div class="more--midahshi">
-								<a href="/category-tag.html">接続する社会的共通資本<span>Circulation &amp; Connectivity</span></a>
-							</div>
-							<ul>
-								<li><a href="/category-tag.html">大気、河川、地形</a></li>
-								<li><a href="/category-tag.html">水と土壌</a></li>
-								<li><a href="/category-tag.html">道（道路・林道・鉄道）</a></li>
-								<li><a href="/category-tag.html">菌類および生物多様性</a></li>
-								<li><a href="/category-tag.html">時間</a></li>
-							</ul>
-						</div>
-						<div class="more--child pc-none">
-							<div class="more--midahshi">
-								<a href="<?php echo home_url('/contributors'); ?>">執筆者一覧<span>Contributors</span></a>
-							</div>
-						</div>
-						<div class="more--child pc-none">
-							<div class="more--midahshi">
-								<a href="<?php echo home_url('/mailmagazine'); ?>">メルマガ登録<span>Newsletter</span></a>
-							</div>
-						</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 				<div class="spacer"></div>
