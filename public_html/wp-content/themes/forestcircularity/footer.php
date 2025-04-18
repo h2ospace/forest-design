@@ -67,6 +67,7 @@
 		</div>
 		<script src="/asset/js/function.min.js"></script>
 
+        <?php if (!is_single() && !is_page()): ?>
 		<script src="/asset/js/macy.min.js"></script>
 		<script>
 			var masonry = new Macy({
@@ -93,6 +94,18 @@
                 masonry.recalculate(true);
             });
 		</script>
+        <?php endif; ?>
+
+		<?php if (is_single()): ?>
+			<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+			<script>
+			const image = document.getElementsByClassName("parallax");
+			new simpleParallax(image, {
+				scale: 1.2,
+			});
+			</script>
+		<?php endif; ?>
+
         <?php wp_footer(); ?>
 	</body>
 </html>
