@@ -1117,6 +1117,7 @@ a.page-numbers,
 	line-height: 1.8;
 	max-width: 1200px;
 	margin: 0 auto 2rem;
+	text-align: center;
 }
 /* ----------------------------------------------------------------
 	Single Page
@@ -1186,6 +1187,7 @@ h1.single span {
 		position: absolute;
 		top: 0;
 		margin: 4rem 0 0 -230px;
+		word-break: break-all;
 	}
 	.contributor--name {
 		display: block;
@@ -1472,8 +1474,8 @@ ol.reference li::before {
 /*Table event*/
 .event th {
 	color: var(--color-black);
-	width: 8rem;
-	padding: 0.5rem 1rem !important;
+	width: 10rem;
+	padding: 0.5rem !important;
 	vertical-align: top;
 	background-color: #f8f8f8 !important;
 	border-right: none !important;
@@ -1972,6 +1974,7 @@ figcaption {
 .wp-element-caption {
 	margin: 0.5rem 0.5rem 0.5rem 0;
 	color: var(--color-gray);
+	line-height: 1.5;
 }
 .wp-block-button {
 	position: relative;
@@ -1986,11 +1989,12 @@ figcaption {
 	border-radius: 2px !important;
 	box-shadow: none;
 	text-decoration: none;
-	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+	padding: 0.6rem 1rem;
 	margin: 0.5rem 0;
 	display: inline-block;
 	cursor: pointer;
 	text-decoration: none !important;
+	font-size: 0.938rem;
 	font-weight: 500;
 }
 .wp-block-button__link:hover {
@@ -1999,7 +2003,7 @@ figcaption {
 	text-decoration: none !important;
 }
 ul.single {
-	padding: 0 1rem 4rem 2.5rem;
+	padding: 0 1rem 4rem 2rem;
 	margin: 0 auto;
 }
 ul.single li {
@@ -2009,7 +2013,7 @@ ul.single li {
 	text-align: left;
 }
 ul.single--decimal {
-	padding: 0 1rem 4rem 2.5rem;
+	padding: 0 1rem 4rem 2rem;
 	margin: 0 auto;
 }
 ul.single--decimal li {
@@ -2031,6 +2035,7 @@ ul.single--decimal li {
 	height: 30px;
 	width: 30px;
 	opacity: 1;
+	z-index: 40 !important;
 }
 .wp-lightbox-container button:hover {
 	background-color: #000000 !important;
