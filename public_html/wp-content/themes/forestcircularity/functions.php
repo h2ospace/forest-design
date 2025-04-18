@@ -10,6 +10,20 @@ function add_stylesheet()
 add_action('wp_enqueue_scripts', 'add_stylesheet');
 
 /**
+ * エディタースタイルの追加読み込み
+ */
+function mytheme_block_editor_styles() {
+    wp_enqueue_style(
+        'mytheme-editor-style',
+        get_template_directory_uri() . '/editor-style.css',
+        false,
+        '1.0',
+        'all'
+    );
+}
+add_action('enqueue_block_editor_assets', 'mytheme_block_editor_styles');
+
+/**
  * テーマのサポート
  */
 function add_theme_support_title_tag()
