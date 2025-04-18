@@ -59,12 +59,20 @@ function auto_post_slug( $slug, $post_ID, $post_status ) {
         $args = array(
             'post_type' => 'post',
             'post_status' => 'publish',
-            'posts_per_page' => -1,
+            'posts_per_page' => 1,
+            'orderby' => 'post_name',
+            'order' => 'DESC'
         );
         $posts = get_posts( $args );
-        $post_count = count( $posts );
+        $last_number = 0;
+        if (!empty($posts)) {
+            $last_post = $posts[0];
+            $last_slug = $last_post->post_name;
+            // num-を除去して整数に変換
+            $last_number = intval(str_replace('num-', '', $last_slug));
+        }
         // スラッグを生成
-        $slug = 'num-' . ($post_count + 1);
+        $slug = 'num-' . ($last_number + 1);
     }
 
     return $slug;
