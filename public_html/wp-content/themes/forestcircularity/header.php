@@ -145,6 +145,16 @@ foreach ($tags as $tag) {
 							</ul>
 						</div>
 						<?php endforeach; ?>
+                        <div class="more--child pc-none">
+                            <div class="more--midahshi">
+                                <a href="<?php echo home_url('/contributors'); ?>">執筆者一覧<span>Contributors</span></a>
+                            </div>
+                        </div>
+                        <div class="more--child pc-none">
+                            <div class="more--midahshi">
+                                <a href="<?php echo home_url('/mailmagazine'); ?>">メルマガ登録<span>Newsletter</span></a>
+                            </div>
+                        </div>
 					</div>
 				</div>
 				<div class="spacer"></div>
