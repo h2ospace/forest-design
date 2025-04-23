@@ -2,11 +2,11 @@
 <?php while (have_posts()):
 	the_post(); ?>
 	<?php
-	// 番号を取得
+	# 番号を取得
 	$post_slug = $post->post_name;
 	$number = str_replace('num-', '', $post_slug);
 
-	// 月を英語に変換する配列
+	# 月を英語に変換する配列
 	$months_ja_en = array(
 		'1月' => 'January',
 		'2月' => 'February',
@@ -22,16 +22,38 @@
 		'12月' => 'December'
 	);
 
-	// 日本語の月を英語に変換
+	# 日本語の月を英語に変換
 	$month_ja = get_the_date('n月');
 	$date = $months_ja_en[$month_ja] . ' ' . get_the_date('d, Y');
 
-	// 著者を取得
+	# 著者を取得
 	$author_id = get_the_author_meta('ID');
 	$author_name = get_the_author();
 	$author_name_en = get_field('name_english', 'user_' . $author_id);
 	$author_company = get_field('company', 'user_' . $author_id);
 	$author_desc = get_field('description', 'user_' . $author_id);
+
+	# ページビューを記録
+	global $wpdb;
+	$sql = $wpdb->prepare('SELECT id, count FROM page_view WHERE
+		post_id = %d AND 
+		date = %s',
+		$post->ID,
+		date('Y-m-d')
+	);
+	$result = $wpdb->get_row($sql);
+	if ($result) {
+		$wpdb->update(
+			'page_view',
+			array('count' => $result->count + 1),
+			array('id' => $result->id)
+		);
+	} else {
+		$result = $wpdb->insert(
+			'page_view',
+			array('post_id' => $post->ID, 'date' => date('Y-m-d'), 'count' => 1)
+		);
+	}
 	?>
 
 	<!-- Contents -->
@@ -64,71 +86,10 @@
 			</dd>
 		</dl>
 		<!-- Related Articles -->
-		<div class="related--wrap">
-			<h4>Related Articles</h4>
-			<?php
-			$catkwds = array();
-
-			if (has_category()) {
-
-				$cats = get_the_category();
-
-				foreach ($cats as $cat) {
-					$catkwds[] = $cat->term_id;
-				}
-
-			}
-			$args = array(
-				'post_type' => 'post',
-				'posts_per_page' => '3',
-				'post__not_in' => array($post->ID),
-				'category__in' => $catkwds,
-				'orderby' => 'rand'
-			);
-			$the_query = new WP_Query($args);
-			if ($the_query->have_posts()):
-				?>
-				<ul>
-					<?php
-					while ($the_query->have_posts()):
-						$the_query->the_post();
-						?>
-						<li>
-							<a href="<?php the_permalink(); ?>"></a>
-							<?php the_title(); ?><br />
-							<span class="number"><?php echo sprintf('%03s', $number); ?></span>
-							<span><?php echo get_the_date('Y.m.d'); ?></span>
-						</li>
-					<?php endwhile;
-			endif;
-			wp_reset_postdata();
-			?>
-			</ul>
-		</div>
+		<?php get_template_part('template-parts/related-articles'); ?>
 		<!-- Popular Articles -->
-		<div class="related--wrap">
-			<h4>Popular Articles</h4>
-			<ul>
-				<li>
-					<a href="/single.html"></a>
-					純木造3階建て 東京農業大学 学生寮で「木」の効果検証<br />
-					<span class="number">003</span>
-					<span>2025.04.05</span>
-				</li>
-				<li>
-					<a href="/single.html"></a>
-					2025年日本国際博覧会（大阪・関西万博） 「大屋根リング記念式典」を開催<br />
-					<span class="number">045</span>
-					<span>2025.04.05</span>
-				</li>
-				<li>
-					<a href="/single.html"></a>
-					世界屈指の厳格な法規制が支えるカナダの持続可能な森林管理<br />
-					<span class="number">023</span>
-					<span>2025.04.05</span>
-				</li>
-			</ul>
-		</div>
+		<?php get_template_part('template-parts/popular-articles'); ?>
+		
 		<!-- Social Share Button -->
 		<ul class="sns--wrap">
 			<li class="icon-fb">
