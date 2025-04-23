@@ -89,11 +89,11 @@
 		<?php get_template_part('template-parts/related-articles'); ?>
 		<!-- Popular Articles -->
 		<?php get_template_part('template-parts/popular-articles'); ?>
-		
+
 		<!-- Social Share Button -->
 		<ul class="sns--wrap">
 			<li class="icon-fb">
-				<a target="_blank" href="https://www.facebook.com/">
+				<a target="_blank" href="<?php echo 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode(get_permalink()); ?>">
 					<svg viewBox="0 0 32 32">
 						<circle cx="16" cy="16" r="16" />
 						<path d="m22.27 20.08.74-4.86h-4.66v-3.15c0-1.33.65-2.63 2.74-2.63h2.12v-4.14s-1.92-.33-3.76-.33c-3.84 0-6.35 2.33-6.35 6.54v3.7h-4.27v4.86h4.27v11.74c.86.13 1.73.2 2.63.2s1.77-.07 2.63-.2v-11.74h3.92z" fill="#fff" />
@@ -101,7 +101,7 @@
 				</a>
 			</li>
 			<li class="icon-x">
-				<a target="_blank" href="https://x.com/">
+				<a target="_blank" href="<?php echo 'https://twitter.com/intent/tweet?url=' . urlencode(get_permalink()) . '&text=' . urlencode(get_the_title()); ?>">
 					<svg viewBox="0 0 32 32">
 						<circle cx="16" cy="16" r="16" />
 						<path d="m17.64 14.68 6.43-7.32h-1.52l-5.58 6.35-4.46-6.35h-5.14l6.74 9.61-6.74 7.67h1.52l5.89-6.71 4.71 6.71h5.14m-15.19-16.15h2.34l10.77 15.08h-2.34" fill="#fff" />
