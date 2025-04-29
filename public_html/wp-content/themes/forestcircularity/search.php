@@ -8,8 +8,12 @@ $search_count = $wp_query->found_posts;
 <?php get_header(); ?>
 
 <div class="container--search">
-    <h2 class="search">「<?php echo esc_html($keyword); ?>」の検索結果</h2>
-    <p class="border--botom pb-none mb-none">検索結果<?php echo esc_html($search_count); ?>件</p>
+    <?php if ($search_count > 0) : ?>
+        <h2 class="search">「<?php echo esc_html($keyword); ?>」の検索結果</h2>
+        <p class="border--botom pb-none mb-none">検索結果<?php echo esc_html($search_count); ?>件</p>
+    <?php else : ?>
+        <h2 class="search">キーワードに一致する記事は見つかりませんでした</h2>
+    <?php endif; ?>
     <?php while (have_posts()) : the_post(); ?>
     <div class="search--result">
         <a href="<?php the_permalink(); ?>"></a>

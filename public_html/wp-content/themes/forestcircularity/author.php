@@ -26,9 +26,13 @@ $user_id = get_query_var('author');
     <!-- Masonry Layout -->
     <div id="macy--wrap">
         <?php
-        while (have_posts()): the_post();
-            get_template_part('template-parts/content');
-        endwhile;
+        if (have_posts()):
+            while (have_posts()): the_post();
+                get_template_part('template-parts/content');
+            endwhile;
+        else:
+            echo '<p style="text-align: center;">記事がありません</p>';
+        endif;
         ?>
     </div>
     <?php the_posts_pagination([

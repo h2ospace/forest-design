@@ -26,7 +26,11 @@
 			?>
 			<ul>
 				<?php
+                $cnt = 0;
 				foreach ($post_ids as $post_id):
+                    if (!isset($popular_posts[$post_id])) {
+                        continue;
+                    }
 					$post = $popular_posts[$post_id];
 					setup_postdata($post);
 					$number = str_replace('num-', '', $post->post_name);
@@ -37,7 +41,11 @@
 						<span class="number"><?php echo sprintf('%03s', $number); ?></span>
 						<span><?php echo get_the_date('Y.m.d'); ?></span>
 					</li>
-				<?php endforeach;
+				<?php
+                if (++$cnt >= 3) {
+                    break;
+                }
+                endforeach;
 				wp_reset_postdata(); ?>
 			</ul>
 		</div>
