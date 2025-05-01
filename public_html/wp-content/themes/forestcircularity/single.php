@@ -72,6 +72,7 @@
 		<?php the_content(); ?>
 
 		<!-- Tags -->
+		<?php if (has_tag()): ?>
 		<dl class="tags">
 			<dt>Tags</dt>
 			<dd>
@@ -83,8 +84,9 @@
 					}
 					?>
 				</ul>
-			</dd>
-		</dl>
+				</dd>
+			</dl>
+		<?php endif; ?>
 		<!-- Related Articles -->
 		<?php get_template_part('template-parts/related-articles'); ?>
 		<!-- Popular Articles -->
