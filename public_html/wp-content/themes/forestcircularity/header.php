@@ -133,6 +133,16 @@ foreach ($tags as $tag) {
 			<div class="more--menu">
 				<div class="more--wrap-base">
 					<div class="more--wrap">
+					<div class="more--child pc-none">
+                            <div class="more--midahshi">
+                                <a href="<?php echo home_url('/contributors'); ?>">執筆者一覧<span>Contributors</span></a>
+                            </div>
+                        </div>
+                        <div class="more--child pc-none">
+                            <div class="more--midahshi">
+                                <a href="<?php echo home_url('/newsletter'); ?>">ニューズレター登録<span>Newsletter</span></a>
+                            </div>
+                        </div>
 						<?php foreach ($categories as $category) : ?>
 						<div class="more--child">
 							<div class="more--midahshi">
@@ -145,16 +155,6 @@ foreach ($tags as $tag) {
 							</ul>
 						</div>
 						<?php endforeach; ?>
-                        <div class="more--child pc-none">
-                            <div class="more--midahshi">
-                                <a href="<?php echo home_url('/contributors'); ?>">執筆者一覧<span>Contributors</span></a>
-                            </div>
-                        </div>
-                        <div class="more--child pc-none">
-                            <div class="more--midahshi">
-                                <a href="<?php echo home_url('/newsletter'); ?>">メルマガ登録<span>Newsletter</span></a>
-                            </div>
-                        </div>
 					</div>
 				</div>
 				<div class="spacer"></div>
