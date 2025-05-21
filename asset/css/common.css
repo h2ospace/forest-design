@@ -900,17 +900,18 @@ header {
 		position: relative;
 	}
 	.more--midahshi span {
+		font-size: 0.625rem;
 		position: absolute;
 		right: 0;
 		bottom: 1rem;
 	}
-	.more--child:nth-last-of-type(2) {
+	/*.more--child:nth-last-of-type(2) {
 		border-top: var(--color-lightgray) solid 1px;
 		padding-top: 1rem;
 	}
 	.more--child:nth-last-of-type(1) {
 		margin-top: -1rem;
-	}
+	}*/
 }
 
 /* ----------------------------------------------------------------
