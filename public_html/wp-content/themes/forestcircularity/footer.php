@@ -3,7 +3,7 @@
 			<div class="foot--wrap">
 				<div class="foot--menu">
 					<div class="logo">
-						<a href="/"><img src="/asset/images/logo.svg?0402" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
+					<a href="<?php echo home_url('/'); ?>"><img src="/asset/images/logo-footer.svg" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
 					</div>
 					<ul>
 						<li>

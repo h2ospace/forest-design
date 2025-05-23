@@ -48,7 +48,9 @@ foreach ($tags as $tag) {
 					</form>
 				</div>
 				<div class="header--logo">
-					<a href="<?php echo home_url(); ?>"><img src="/asset/images/logo.svg?0403" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
+<!-- ロゴ部分下記2行に変更 -->
+<a href="/"><img class="sp_none" src="<?php echo home_url('/'); ?>/asset/images/logo.svg?0519" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
+<a href="/"><img class="pc_none sp-logo" src="<?php echo home_url('/'); ?>/asset/images/logo-sp.svg" alt="森林循環経済 FOREST CIRCULARITY" width="150" height="59" /></a>
 				</div>
 				<div class="header--right">
 					<ul>
