@@ -33,7 +33,7 @@
             ?>
         <div class="contributors--child">
             <h2><?php echo esc_html($user_name); ?></h2>
-            <p class="contributors--name-en"><?php echo esc_html($nickname); ?></p>
+            <p class="contributors--name-en"><?php the_field('name_english', 'user_' . $user_id); ?></p>
             <p class="contributors--title"><?php the_field('company', 'user_' . $user_id); ?></p>
             <p class="contributors--desc"><?php echo mb_substr($user_desc, 0, 80); ?>...</p>
             <a href="<?php echo esc_url(get_author_posts_url($user_id)); ?>"></a>
