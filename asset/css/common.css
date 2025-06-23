@@ -385,7 +385,7 @@ ol {
 -----------------------------------------------------------------*/
 header {
 	width: 100%;
-	height: 200px;
+	height: 194px;
 	background: var(--color-white);
 	z-index: 50;
 	position: fixed;
@@ -1257,7 +1257,7 @@ dl.tags li a:hover,
 }
 .related--wrap h4 {
 	font-family: "Barlow", sans-serif;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: 600;
 	margin-bottom: 1rem;
 	line-height: 1;
@@ -1268,10 +1268,9 @@ dl.tags li a:hover,
 .related--wrap li {
 	position: relative;
 	border-bottom: var(--color-xlightgray) solid 1px;
-	font-size: 1.125rem;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.5;
-	padding: 1.5rem 0;
+	padding: 1rem 0;
 }
 .related--wrap li span {
 	font-size: 0.75rem;
@@ -1279,10 +1278,10 @@ dl.tags li a:hover,
 }
 .related--wrap li span.number {
 	position: absolute;
-	bottom: 1rem;
+	bottom: 0.5rem;
 	right: 0;
 	font-family: "Barlow", sans-serif;
-	font-size: 5rem;
+	font-size: 4.25rem;
 	font-weight: 600;
 	color: var(--color-number);
 	line-height: 1;
