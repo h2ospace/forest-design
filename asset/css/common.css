@@ -1094,7 +1094,7 @@ a.page-numbers,
 @media (max-width: 600px) {
 	.wp-pagenavi a,
 	.wp-pagenavi .current {
-		width: 35px;
+		min-width: 35px;
 		height: 35px;
 		padding: 3px 11px;
 	}
