@@ -1059,7 +1059,7 @@ a.page-numbers,
 }
 
 .wp-pagenavi a {
-	width: 40px;
+	min-width: 40px;
 	height: 40px;
 	color: var(--color-black);
 	font-size: clamp(0.938rem, 0.91rem + 0.12vw, 1rem);
@@ -1072,7 +1072,7 @@ a.page-numbers,
 	border: var(--color-xlightgray) solid 1px;
 }
 .wp-pagenavi span {
-	width: 40px;
+	min-width: 40px;
 	height: 40px;
 	background-color: var(--color-black) !important;
 	border: var(--color-black) solid 1px;
