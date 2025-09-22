@@ -42,7 +42,7 @@ foreach ($tags as $tag) {
 		<header class="js-header">
 			<div class="header--wrap">
 				<div class="header--left">
-					<form action="" method="get">
+					<form action="/" method="get">
 						<input type="text" name="s" placeholder="サイト内検索" value="<?php echo (get_search_query() ? get_search_query() : ''); ?>" />
 						<button type="submit"><img src="/asset/images/icon-search.svg" alt="" width="20" height="20" /></button>
 					</form>
