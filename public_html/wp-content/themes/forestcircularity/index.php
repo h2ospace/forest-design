@@ -4,9 +4,16 @@
 		<div class="container">
 			<!-- Masonry Layout -->
 			<div id="macy--wrap">
-				<?php while (have_posts()): the_post(); ?>
-				<?php get_template_part('template-parts/content'); ?>
-				<?php endwhile; ?>
+				<?php
+				$cnt = 1;
+				while (have_posts()): the_post();
+					if (is_front_page() && $cnt++ === 4):
+						get_template_part('template-parts/advertisement');
+					endif;
+
+					get_template_part('template-parts/content');
+				endwhile;
+				?>
 			</div>
 
 			<?php the_posts_pagination([

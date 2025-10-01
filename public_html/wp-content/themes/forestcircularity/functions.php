@@ -4,8 +4,8 @@
  */
 function add_stylesheet()
 {
-    wp_enqueue_style('commoncss', '/asset/css/common.min.css?v=0423-2');
-    wp_enqueue_style('style', get_stylesheet_uri() . '?v=0423-2');
+    wp_enqueue_style('commoncss', '/asset/css/common.min.css?v=0625');
+    wp_enqueue_style('style', get_stylesheet_uri() . '?v=0625');
 }
 add_action('wp_enqueue_scripts', 'add_stylesheet');
 
