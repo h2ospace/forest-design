@@ -3,7 +3,7 @@
 			<div class="foot--wrap">
 				<div class="foot--menu">
 					<div class="logo">
-					<a href="<?php echo home_url('/'); ?>"><img src="/asset/images/logo-footer.svg" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
+					<a href="/"><img src="/asset/images/logo-footer.svg" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
 					</div>
 					<ul>
 						<li>
@@ -67,6 +67,32 @@
 		</div>
 		<script src="/asset/js/function.min.js"></script>
 
+		<?php if (is_front_page()) : ?>
+			<script>
+			(function () {
+				const header = document.querySelector(".js-header");
+				let lastScrollY = window.scrollY;
+
+				window.addEventListener("scroll", () => {
+					const currentScrollY = window.scrollY;
+
+					if (currentScrollY <= 0) {
+						// 最上部
+						header.classList.remove("is-hide", "is-show", "is-active");
+					} else if (currentScrollY > lastScrollY) {
+						// 下スクロール
+						header.classList.add("is-hide");
+						header.classList.remove("is-show");
+					} else {
+						// 上スクロール
+						header.classList.add("is-show", "is-active");
+						header.classList.remove("is-hide");
+					}
+					lastScrollY = currentScrollY;
+				});
+			})();
+			</script>
+		<?php endif; ?>
         <?php if (!is_single() && !is_page()): ?>
 		<script src="/asset/js/macy.min.js"></script>
 		<script>
