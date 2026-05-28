@@ -6,7 +6,7 @@
 	<div class="article--wrap">
 		<p class="article--date"><?php the_time('n.j'); ?><span><?php echo esc_html(get_post_time('D')); ?> <?php the_time('Y'); ?></span></p>
 		<h2><?php the_title(); ?></h2>
-		<p class="article--desc"><?php the_excerpt(); ?></p>
+		<p class="article--desc"><?php echo get_the_excerpt(); ?></p>
 		<ul class="article--tag">
 			<?php foreach (get_the_category() as $category): ?>
 				<li><a href="<?php echo get_category_link($category->term_id); ?>"><?php echo $category->name; ?></a></li>

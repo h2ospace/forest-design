@@ -35,11 +35,11 @@ foreach ($tags as $tag) {
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
 
+        <?php wp_head(); ?>
+
 		<?php if (is_front_page()) : ?>
 			<link href="/asset/css/frontpage.min.css" rel="stylesheet" />
 		<?php endif; ?>
-
-        <?php wp_head(); ?>
 	</head>
 	<body>
 		<!-- Header -->
