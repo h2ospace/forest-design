@@ -69,7 +69,7 @@
 		<div class="title--wrap">
 			<h1 class="single"><?php the_title(); ?><span><?php echo sprintf('%03s', $number); ?></span></h1>
 			<p class="midashi--en"><?php the_field('english_title'); ?></p>
-			<p class="update--en">Updated by <?php echo $get_the_author; ?> on <?php echo $date; ?>, <?php echo get_the_time(); ?> JST</p>
+			<p class="update--en">Updated by <?php echo get_the_author(); ?> on <?php echo $date; ?>, <?php echo get_the_time(); ?> JST</p>
 		</div>
 		<div class="container--leaf">
 		<!-- Contributer -->
