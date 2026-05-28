@@ -36,6 +36,10 @@ foreach ($tags as $tag) {
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
 
         <?php wp_head(); ?>
+
+		<?php if (is_front_page()) : ?>
+			<link href="/asset/css/frontpage.min.css" rel="stylesheet" />
+		<?php endif; ?>
 	</head>
 	<body>
 		<!-- Header -->
@@ -48,10 +52,8 @@ foreach ($tags as $tag) {
 					</form>
 				</div>
 				<div class="header--logo">
-<!-- ロゴ部分下記2行に変更 -->
-<a href="/"><img class="sp_none" src="<?php echo home_url('/'); ?>/asset/images/logo.svg?0519" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
-<a href="/"><img class="pc_none sp-logo" src="<?php echo home_url('/'); ?>/asset/images/logo-sp.svg" alt="森林循環経済 FOREST CIRCULARITY" width="150" height="59" /></a>
-				</div>
+				<a href="/"><img class="sp_none" src="/asset/images/logo.svg?0519" alt="森林循環経済 FOREST CIRCULARITY" width="240" height="54" /></a>
+				<a href="/"><img class="pc_none sp-logo" src="/asset/images/logo-sp.svg" alt="森林循環経済 FOREST CIRCULARITY" width="150" height="59" /></a>				</div>
 				<div class="header--right">
 					<ul>
 						<li>

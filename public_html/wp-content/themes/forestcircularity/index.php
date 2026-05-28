@@ -1,17 +1,18 @@
 <?php get_header(); ?>
 
-		<!-- Contents -->
-		<div class="container">
-			<!-- Masonry Layout -->
-			<div id="macy--wrap">
+		<main>
+			<!-- Tile article
+			============================================= -->
+			<div class="article--list">
+
 				<?php
 				$cnt = 1;
 				while (have_posts()): the_post();
-					if (is_front_page() && $cnt++ === 4):
-						get_template_part('template-parts/advertisement');
+					if (is_front_page() && $cnt++ === 5):
+						get_template_part('template-parts/advertisement-front');
 					endif;
 
-					get_template_part('template-parts/content');
+					get_template_part('template-parts/content-front');
 				endwhile;
 				?>
 			</div>
@@ -23,6 +24,6 @@
 						'next_text'     => __( '&gt;'), // 「次へ」リンクのテキスト
 						'type'          => 'list', // 戻り値の指定 (plain/list)
 					]); ?>
-		</div>
+		</main>
 
 		<?php get_footer(); ?>
