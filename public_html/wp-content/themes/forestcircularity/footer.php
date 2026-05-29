@@ -67,7 +67,7 @@
 		</div>
 		<script src="/asset/js/function.min.js"></script>
 
-		<?php if (is_front_page()) : ?>
+		<?php if (is_home()) : ?>
 			<script>
 			(function () {
 				const header = document.querySelector(".js-header");
@@ -93,7 +93,7 @@
 			})();
 			</script>
 		<?php endif; ?>
-        <?php if (!is_single() && !is_page()): ?>
+        <?php if (!is_home() && !is_single() && !is_page()): ?>
 		<script src="/asset/js/macy.min.js"></script>
 		<script>
 			var masonry = new Macy({
