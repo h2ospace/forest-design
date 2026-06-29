@@ -4,6 +4,9 @@ config.codekit3
 .vscode/*
 .idea/*
 
+# macOS
+.DS_Store
+
 # Wordpress - ignore core, configuration, examples, uploads and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 

@@ -2128,6 +2128,19 @@ figcaption {
 	color: var(--color-white) !important;
 	text-decoration: none !important;
 }
+.post-password-form input[type="submit"] {
+	color: var(--color-white);
+	background-color: var(--color-darkblack);
+	border: none;
+	border-radius: 2px;
+	padding: 0.6rem 1rem;
+	cursor: pointer;
+	font-size: 0.938rem;
+	font-weight: 500;
+}
+.post-password-form input[type="submit"]:hover {
+	opacity: 0.85;
+}
 ul.single {
 	padding: 0 1rem 4rem 2rem;
 	margin: 0 auto;

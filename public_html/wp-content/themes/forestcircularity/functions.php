@@ -4,7 +4,7 @@
  */
 function add_stylesheet()
 {
-    wp_enqueue_style('commoncss', '/asset/css/common.min.css?v=0625');
+    wp_enqueue_style('commoncss', '/asset/css/common.min.css?v=0629');
     wp_enqueue_style('style', get_stylesheet_uri() . '?v=0625');
 }
 add_action('wp_enqueue_scripts', 'add_stylesheet');
@@ -78,3 +78,11 @@ function auto_post_slug( $slug, $post_ID, $post_status ) {
     return $slug;
 }
 add_filter( 'wp_unique_post_slug', 'auto_post_slug', 10, 3  );
+
+/**
+ * パスワード保護ページのタイトルから「保護中: 」を除去
+ */
+function remove_protected_title_prefix( $format ) {
+    return '%s';
+}
+add_filter( 'protected_title_format', 'remove_protected_title_prefix' );
